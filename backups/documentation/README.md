@@ -1,4 +1,3 @@
-# Documentation
 
 ---
 # Bolt V2 Fleet Management: End-User
@@ -55,6 +54,48 @@ Inheritance Logic:
 
 
 
+
+
+# GROUP: Basic Docs
+
 ---
-# Basic Docs
+# Getting Started
+
+
+
+
+---
+# Live Tracking & Remote Operations
+
+
+
+
+---
+# Yard & Warehouse Management
+
+
+
+
+---
+# Billing & Enterprise Wallet Logic
+
+
+
+
+---
+# Reports & Analytics
+
+
+
+
+---
+# Administration & Governance
+
+
+
+
+---
+# Troubleshooting FAQ
+
+
 

@@ -1,4 +1,3 @@
-# Help Center
 
 ---
 # Help Center

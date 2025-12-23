@@ -1,4 +1,3 @@
-# Home
 
 ---
 # Home
@@ -9,11 +8,9 @@ You’re in the right place if you run fleets, field assets, or on‑ground team
 
 This space helps you go from “what is BOLT?” to “ship it in production”.
 
-> **Note:** These docs are written for operators and product owners first.
+These docs are written for operators and product owners first.
 
 If you’re integrating systems, start with the overview.
-
-
 
 ## Pick your path
 
