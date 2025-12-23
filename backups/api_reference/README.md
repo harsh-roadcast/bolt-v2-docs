@@ -1,4 +1,2 @@
-# Developer Platform API
-
-# Reference
+# API Reference
 
