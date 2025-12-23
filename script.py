@@ -10,6 +10,31 @@ BACKUP_DIR = './backups'
 headers = {'Authorization': f'Bearer {API_TOKEN}'}
 
 def run_backup():
+
+    try:
+        repo = Repo('.') 
+        
+        # Ensure we are on a branch
+        current_branch = repo.active_branch.name
+        
+        # Stage the new backup files
+        repo.git.add(BACKUP_DIR)
+        
+        # Only commit if there are changes to avoid empty commit errors
+        if repo.is_dirty(untracked_files=True):
+            repo.index.commit("Backup: Roadcast Docs updated")
+            print("Commit created.")
+            
+            # Push to the origin
+            origin = repo.remote(name='origin')
+            origin.push(current_branch)
+            print(f"Successfully pushed to GitHub branch: {current_branch}!")
+        else:
+            print("No changes detected since last backup.")
+            
+    except Exception as e:
+        print(f"Git Error: {e}")
+
     if not os.path.exists(BACKUP_DIR):
         os.makedirs(BACKUP_DIR)
 
