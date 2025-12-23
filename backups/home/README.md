@@ -1,5 +1,5 @@
 
----
+----- 
 # Home
 
 # Welcome to the BOLT V2 docs
@@ -8,7 +8,7 @@ You’re in the right place if you run fleets, field assets, or on‑ground team
 
 This space helps you go from “what is BOLT?” to “ship it in production”.
 
-These docs are written for operators and product owners first.
+> **Note:** These docs are written for operators and product owners first.
 
 If you’re integrating systems, start with the overview.
 
