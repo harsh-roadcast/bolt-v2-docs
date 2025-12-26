@@ -10,4 +10,6 @@
 * [Billing & Enterprise Wallet Logic](../basic-docs/billing-and-enterprise-wallet-logic.md)
 * [Reports & Analytics](../basic-docs/reports-and-analytics.md)
 * [Administration & Governance](../basic-docs/administration-and-governance.md)
+* [UI/UX Specifications & Design System](basic-docs/ui-ux-specifications-and-design-system.md)
+* [Core Operational Logic & Expected Behaviors](basic-docs/core-operational-logic-and-expected-behaviors.md)
 * [Troubleshooting FAQ](../basic-docs/troubleshooting-faq.md)
