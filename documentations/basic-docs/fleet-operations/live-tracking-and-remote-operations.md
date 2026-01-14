@@ -11,7 +11,7 @@ The tracking interface utilizes **Leaflet** to provide a high-performance, real-
   * **Red:** Ignition Off.
   * **Grey:** Inactive (No data received for a set period).
 
-<figure><img src="../documentations/.gitbook/assets/Frame 22.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Frame 22.png" alt=""><figcaption></figcaption></figure>
 
 #### Vehicle Marker Legend & Status Logic
 
