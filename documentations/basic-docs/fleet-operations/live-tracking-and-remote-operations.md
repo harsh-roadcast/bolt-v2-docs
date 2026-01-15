@@ -1,17 +1,65 @@
+---
+description: >-
+  The Live Tracking dashboard provides a real-time view of your entire fleet. It
+  combines an interactive map with a dynamic vehicle list, allowing dispatchers
+  to monitor status, location, and events ins
+---
+
 # Live Tracking & Remote Operations
 
-#### Live Tracking & Remote Operations
+### 1. The Dashboard Layout
 
-The tracking interface utilizes **Leaflet** to provide a high-performance, real-time visualization of your fleet.
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
-* **Visual Overlays:** Toggle between standard road maps, high-resolution satellite imagery, and live traffic data.
-* **Marker Logic:** Vehicle icons change color dynamically based on state:
-  * **Green:** Ignition On / Moving.
-  * **Yellow:** Idle (Ignition On but stationary).
-  * **Red:** Ignition Off.
-  * **Grey:** Inactive (No data received for a set period).
+When you click "Live Tracking" in the sidebar, you will see three main areas:
+
+1. The Map (Right Pane): Displays vehicle icons, geofences, and Points of Interest (POIs).
+2. The Sidebar (Left Pane): A searchable list of all assets, categorized by status.
+3. The Detail Card (Bottom/Overlay): Appears when you select a specific vehicle.
+
+***
+
+### 2. Navigating the Map
+
+The map is built for speed and clarity. You can customize what you see using the Layer Selector (usually top-right).
+
+* Map Layers: Switch between `Default` (Street View), `Satellite`, or `Hybrid`.
+* Traffic Layer: Toggle real-time traffic density (Green/Yellow/Red lines) to help route drivers around congestion.
+* Clusters: To keep the map clean, vehicles close together are grouped into Clusters (colored circles with numbers).
+  * _Action:_ Click a cluster to zoom in and see individual vehicles.
+
+***
+
+### 3. Vehicle Status & Icons
+
+Vehicles are color-coded so you can understand their status at a glance.
+
+| Color  | Status   | Definition                                                                 |
+| ------ | -------- | -------------------------------------------------------------------------- |
+| Green  | Running  | Engine is ON and vehicle is moving.                                        |
+| Yellow | Idle     | Engine is ON but vehicle has been stationary for over 5 minutes.           |
+| Red    | Stopped  | Engine is OFF.                                                             |
+| Grey   | Inactive | Device has not reported data for more than 24 hours (No Signal/Power Cut). |
 
 <figure><img src="../../.gitbook/assets/Frame 22.png" alt=""><figcaption></figcaption></figure>
+
+### 4. Monitoring a Specific Vehicle
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+To track a single asset, find it in the sidebar list or click its icon on the map. This opens the Vehicle Detail Card, which displays:
+
+* Live Metrics: Current Speed, Odometer, and Fuel Level.
+* Location: Current address and time since last update.
+* Sensors: (If equipped) Temperature, Door Status, or AC On/Off.
+
+#### Available Actions
+
+From the detail card, you can perform remote operations:
+
+* 📍 Playback: View the route history for today or a custom date range.
+* 🔗 Share Location: Generate a temporary public link to share the vehicle's location with a customer.
+* 🛑 Immobilize: (Authorized Admins Only) Remotely cut off the engine in case of theft.
 
 #### Vehicle Marker Legend & Status Logic
 
@@ -37,12 +85,24 @@ Bolt V2 utilizes distinct SVG icons to differentiate between asset classes.
 
 #### Remote Commands (Immobilization)
 
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure></div>
+
 For vehicles equipped with supported hardware, operators can send remote commands:
 
 * **Immobilize:** Remotely disables the vehicle's starter relay. This is a critical security feature used in theft recovery.
 * **Parking Mode:** Create a temporary "electronic lock" around a vehicle. If the vehicle moves while this is active, high-priority alerts are sent to the Command Center.
 
-#### Managing Geofences & POIs
+### 5. Managing Zones (Geofences & POIs)
 
-* **Geofences:** Draw virtual boundaries (Circles or Polygons). Configure alerts for entry, exit, or stay-duration.
-* **Points of Interest (POI):** Mark regular destinations like gas stations, warehouses, or customer offices.
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+The tracking screen also allows you to manage your virtual boundaries. Switch tabs in the left sidebar to view:
+
+* Geofences: Polygonal zones (e.g., "Main Warehouse"). You will receive alerts when vehicles enter or exit these zones.
+* POIs (Points of Interest): Specific markers for client locations or fuel stations.
+
+#### Common Questions
+
+Q: Why is a vehicle showing as "Grey/Inactive"? A: This usually means the GPS device has lost power or cellular network. Check if the vehicle is parked underground or if the device has been tampered with.
+
+Q: How fast does the map update? A: The map refreshes automatically every 10-30 seconds depending on your device's configuration. You do not need to refresh the page.
