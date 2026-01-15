@@ -1,10 +1,10 @@
----
-description: >-
-  Welcome to Bolt V2! This section will guide you through your first interaction
-  with the platform, ensuring your workspace is set up correctly.
----
-
 # Getting Started
+
+<figure><img src="../documentations/.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../documentations/.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+
+Because a single user can be a member of multiple organizations, the **Select Organisation** screen appears immediately after login.
 
 ### 1. System Requirements
 

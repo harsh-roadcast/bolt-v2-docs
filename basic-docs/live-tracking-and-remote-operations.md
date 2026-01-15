@@ -1,15 +1,12 @@
----
-description: >-
-  The Live Tracking dashboard provides a real-time view of your entire fleet. It
-  combines an interactive map with a dynamic vehicle list, allowing dispatchers
-  to monitor status, location, and events ins
----
-
 # Live Tracking & Remote Operations
+
+<figure><img src="../documentations/.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
+#### Live Tracking & Remote Operations
 
 ### 1. The Dashboard Layout
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../documentations/.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 When you click "Live Tracking" in the sidebar, you will see three main areas:
 
@@ -41,11 +38,11 @@ Vehicles are color-coded so you can understand their status at a glance.
 | Red    | Stopped  | Engine is OFF.                                                             |
 | Grey   | Inactive | Device has not reported data for more than 24 hours (No Signal/Power Cut). |
 
-<figure><img src="../../.gitbook/assets/Frame 22.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../documentations/.gitbook/assets/Frame 22.png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Monitoring a Specific Vehicle
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../documentations/.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 To track a single asset, find it in the sidebar list or click its icon on the map. This opens the Vehicle Detail Card, which displays:
 
@@ -71,6 +68,8 @@ The system color-codes markers based on real-time telematics data received from 
 
 <table data-header-hidden><thead><tr><th width="132"></th><th width="123"></th><th width="226"></th><th></th></tr></thead><tbody><tr><td><strong>Status</strong></td><td><strong>Color</strong></td><td><strong>Hardware Condition</strong></td><td><strong>Logic</strong></td></tr><tr><td><strong>Moving</strong></td><td>Green</td><td>Ignition ON + Speed > 0</td><td>Vehicle is actively performing a trip.</td></tr><tr><td><strong>Idle</strong></td><td>Yellow</td><td>Ignition ON + Speed = 0</td><td>Engine is running but vehicle is stationary. High idling triggers "Fuel Waste" alerts.</td></tr><tr><td><strong>Parked</strong></td><td>Red</td><td>Ignition OFF</td><td>Vehicle is stationary and engine is shut down.</td></tr><tr><td><strong>Inactive</strong></td><td>Grey</td><td>No Data > 10 Mins</td><td>Device is unreachable. Check SIM data or power supply (See Troubleshooting).</td></tr></tbody></table>
 
+<figure><img src="../documentations/.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
 **Vehicle Type Icons**
 
 Bolt V2 utilizes distinct SVG icons to differentiate between asset classes.
@@ -85,7 +84,7 @@ Bolt V2 utilizes distinct SVG icons to differentiate between asset classes.
 
 #### Remote Commands (Immobilization)
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../documentations/.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure></div>
 
 For vehicles equipped with supported hardware, operators can send remote commands:
 
@@ -94,7 +93,7 @@ For vehicles equipped with supported hardware, operators can send remote command
 
 ### 5. Managing Zones (Geofences & POIs)
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../documentations/.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 The tracking screen also allows you to manage your virtual boundaries. Switch tabs in the left sidebar to view:
 

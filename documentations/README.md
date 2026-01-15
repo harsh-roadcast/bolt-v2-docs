@@ -6,8 +6,6 @@ description: >-
 
 # Bolt V2 Fleet Management: End-User
 
-
-
 * **What it is**: Bolt is a unified operations intelligence platform for organizations that manage fleets, field assets, and on-ground personnel. It merges real-time visibility, configurable workflows, and deep reporting into a single web experience.
 * **Who it’s for**:
   * Product Owners: orchestrate programs, configure roles, and align KPIs.
@@ -40,6 +38,8 @@ The structure of Bolt V2 is built as a recursive tree, ensuring that permissions
 3. **Level 2: Child Branches / Regional Hubs**
    * _**Access**:_ Branch Manager / Operations.
    * _**Responsibility**:_ Day-to-day dispatch, yard management, and driver assignments.
+
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 **Inheritance Logic:**
 
