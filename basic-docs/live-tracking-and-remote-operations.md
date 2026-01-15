@@ -1,7 +1,5 @@
 # Live Tracking & Remote Operations
 
-<figure><img src="../documentations/.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
-
 #### Live Tracking & Remote Operations
 
 ### 1. The Dashboard Layout
