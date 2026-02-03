@@ -8,6 +8,9 @@ Before selecting a workspace, it is important to understand how your data is str
 
 **Hierarchy Flow Diagram:**
 
+* **Inheritance:** If your admin sets a "Speeding Alert" at the **Enterprise Parent** level, it is automatically active for all **Regional Branches**.
+* **Isolation:** A user assigned to "Regional Branch: North" cannot see vehicles or data from "Regional Branch: South."
+
 ```mermaid
 graph TD
     A[Roadcast: Platform Root] --> B[Enterprise Parent: Main Company]
@@ -19,9 +22,6 @@ graph TD
     style B fill:#f9f,stroke:#333,stroke-width:2px
     style C fill:#bbf,stroke:#333,stroke-width:1px
 ```
-
-* **Inheritance:** If your admin sets a "Speeding Alert" at the **Enterprise Parent** level, it is automatically active for all **Regional Branches**.
-* **Isolation:** A user assigned to "Regional Branch: North" cannot see vehicles or data from "Regional Branch: South."
 
 #### 2. The Selection Screen (Post-Login)
 
