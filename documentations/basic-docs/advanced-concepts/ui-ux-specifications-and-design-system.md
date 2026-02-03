@@ -15,7 +15,7 @@ Bolt V2 uses a utility-first design system built on **Tailwind CSS**. The goal i
   * **Client Side:** Designed for operational speed, featuring simplified menus focused on tracking and day-to-day logistics.
 * **Consistency:** Every page follows a standard layout: a collapsible **Navigation Sidebar** on the left, a **Contextual Navbar** at the top, and a dynamic **Workspace** in the center.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### The Contextual User Journey
 
