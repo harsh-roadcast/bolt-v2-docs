@@ -1,88 +1,22 @@
-🚀 Getting Started
-Login & MFA Security: Authentication protocols and multi-factor setup.
+# Table of contents
 
-Workspace & Organization Selection: Navigating between different business units.
+* [Bolt V2 Fleet Management: End-User](README.md)
 
-User Profile & Preferences: Customizing your personal dashboard and notification settings.
+## Basic Docs
 
-📍 Live Tracking & Fleet Operations
-Real-time Map Navigation: Utilizing the live tracking interface.
-
-Vehicle Status & Marker Legend: Understanding icons, colors, and movement states.
-
-Fuel Management & Monitoring: Consumption tracking and drain/refill alerts.
-
-Sensor Monitoring (Temp, Battery): Cold chain and hardware health oversight.
-
-Remote Commands & Immobilization: Executing over-the-air (OTA) commands.
-
-Geofences & Points of Interest (POI): Creating virtual boundaries and landmarks.
-
-Route Management & Deviations: Planning paths and monitoring off-route events.
-
-🏭 Yard & Warehouse Management
-Yard Overview & TripHub: Centralized command for site-specific logistics.
-
-Dock Operations & Activity Tracking: Managing loading/unloading timelines.
-
-Trip Purpose & Material Management: Cataloging cargo types and transit intent.
-
-Driver Profiles & Assignment: Managing personnel and vehicle pairing.
-
-Guard View: Mobile QR Scanning: Gatehouse operations and digital check-ins.
-
-🔧 Asset & Maintenance Management
-Personal & Portable Trackers: Managing non-vehicle assets and personnel tags.
-
-SIM Card Inventory: Tracking data usage and ICCID assignments.
-
-Service Scheduling & Odometer Sync: Preventative maintenance based on mileage.
-
-Device Action Logs & History: Forensic audit of hardware communications.
-
-Hardware Troubleshooting Guide: Common fixes for connectivity and GPS drift.
-
-💳 Billing, Wallet & Subscriptions
-Wallet Management & Recharges: Managing credits for platform usage.
-
-License Lifecycle (Buy, Renew, Transfer): Managing the "Seat" economy for devices.
-
-Plan Management & Add-ons: Configuring feature tiers and premium modules.
-
-Payment Transaction History: Invoicing and historical ledger.
-
-📊 Analytics & Reporting
-Standard Operational Reports: Automated summaries for distance, speed, and idling.
-
-Yard Analytics (TAT & Escalations): Monitoring Turnaround Time and bottlenecks.
-
-Custom Report Engine: Building bespoke data views.
-
-AI Assistant (Natural Language Queries): Querying data using plain English commands.
-
-⚙️ Platform Administration (Admin Only)
-Organization Hierarchy (Root to Branch): Setting up parent-child company structures.
-
-User Management & RBAC Roles: Defining Role-Based Access Control levels.
-
-White-Labeling & Custom Branding: Configuring domains, logos, and color schemes.
-
-Device & Command Master Config: Global hardware protocol settings.
-
-Audit Trails & Impersonation: Tracking admin actions and support troubleshooting.
-
-Developer Tools (HSet Debugger): Raw data packet inspection for developers.
-
-🛡️ System Logic & Security (RAG Core)
-Case 9.1: Billing Logic Scenarios: Prorated charges and suspension cycles.
-
-Case 9.2: Hierarchy & Inheritance Rules: How permissions flow through sub-orgs.
-
-Case 9.3: Suspension & Session Security: Session timeouts and account locking.
-
-Enterprise Readiness Success Criteria: Compliance and uptime benchmarks.
-
-🎨 UI/UX Specifications
-Design System & Tailwind Standard: Frontend framework and styling guidelines.
-
-Component Interaction Patterns: Standardized behavior for modals, tables, and forms.
+* [Getting Started](../basic-docs/getting-started.md)
+  * [Account Setup & Login](basic-docs/getting-started/account-setup-and-login.md)
+  * [Troubleshooting](basic-docs/getting-started/troubleshooting.md)
+* [Fleet Operations](basic-docs/fleet-operations/README.md)
+  * [Live Tracking & Remote Operations](../basic-docs/live-tracking-and-remote-operations.md)
+  * [Yard & Warehouse Management](basic-docs/fleet-operations/yard-and-warehouse-management.md)
+  * [Reports & Analytics](basic-docs/fleet-operations/reports-and-analytics.md)
+* [Live Tracking](basic-docs/live-tracking/README.md)
+  * [Fuel Management & Monitoring](basic-docs/live-tracking/fuel-management-and-monitoring.md)
+* [Administration](basic-docs/administration/README.md)
+  * [Administration & Governance](basic-docs/administration/administration-and-governance.md)
+  * [Billing & Enterprise Wallet Logic](basic-docs/administration/billing-and-enterprise-wallet-logic.md)
+* [Advanced Concepts](basic-docs/advanced-concepts/README.md)
+  * [UI/UX Specifications & Design System](basic-docs/advanced-concepts/ui-ux-specifications-and-design-system.md)
+  * [Core Operational Logic & Expected Behaviors](basic-docs/advanced-concepts/core-operational-logic-and-expected-behaviors.md)
+  * [Troubleshooting FAQ](basic-docs/advanced-concepts/troubleshooting-faq.md)
