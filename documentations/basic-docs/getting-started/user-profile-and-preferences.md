@@ -10,7 +10,7 @@ To manage your account, locate the **User Avatar** or your initials in the top r
 2. Select **"Profile"** from the list.
 3. You will be directed to the main settings page where your information is categorized into tabs (General, Security, Preferences).
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure></div>
 
 #### 2. Personal Information
 

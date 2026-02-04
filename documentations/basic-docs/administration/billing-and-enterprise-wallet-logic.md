@@ -13,7 +13,7 @@ description: >-
 * **Logic:** All Child Branches share a single pool of funds.
 * **Case:** Even if a Child Branch has no individual budget, it can perform transactions (like license upgrades) as long as the Parent Wallet has a balance.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Decentralized Billing Model
 

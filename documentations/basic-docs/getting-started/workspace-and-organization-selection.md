@@ -31,7 +31,7 @@ After you successfully authenticate via your username, password, and MFA (Multi-
 
 If you are a member of multiple organizations, they will appear as interactive tiles. Each tile shows the Organization name and its position in the tree.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.2 Using Search for Large Enterprises**
 
@@ -41,7 +41,7 @@ For users with access to hundreds of sub-branches (e.g., Super Admins), use the 
 2. The list will filter in real-time.
 3. Click the tile to enter that specific workspace.
 
-> ![](<../../.gitbook/assets/image (2) (1).png>)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Operational Impact of Selection
 
