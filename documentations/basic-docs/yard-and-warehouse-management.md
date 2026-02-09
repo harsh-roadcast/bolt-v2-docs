@@ -8,7 +8,7 @@ Optimizing turn-around time (TAT) is the primary goal of the Yard module.
 * **Dock Activity:** Track exactly how long a vehicle stays at a specific dock for loading or unloading.
 * **Approval Matrix:** Custom workflows where gate-in or gate-out events require digital authorization from a supervisor.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt="Figure 1: Turn-Around Time (TAT) Gauge"><figcaption><p>Turn-Around Time (TAT) Gauge</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt="Figure 1: Turn-Around Time (TAT) Gauge"><figcaption><p>Turn-Around Time (TAT) Gauge</p></figcaption></figure>
 
 {% hint style="info" %}
 The TAT Gauge visualizes the average Gate-to-Gate time.

@@ -30,7 +30,7 @@ A Target is simply a bin or a collection point.
 * Details: Each target has a name, address, and specific GPS coordinates.
 * Frequency: You can set how often a bin needs to be picked up. If you set the frequency to more than 1, the system automatically creates duplicate requests for you.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### How to Create a Target
 
@@ -39,7 +39,7 @@ A Target is simply a bin or a collection point.
 3. Enter the waste type, bin size, and load capacity.
 4. Save your target.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Organizing Locations: Halt Points
 
@@ -52,7 +52,7 @@ A Halt Point is a specific location where the truck stops. A single halt point c
 * Geo-Fencing: You define a radius (area covered) to ensure the driver is at the right spot.
 * Linked Targets: You can link multiple bins to one stop.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Planning Your Routes
 
@@ -69,7 +69,7 @@ Important Rules:
 * No Adding New Targets: You cannot add a completely new target to an active route. You must create a new route if you need to add a new stop.
 * Exchange Service: If you are swapping a bin (Exchange), you must add a corresponding "Drop" location to the route.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Daily Operations: Trips
 
@@ -88,7 +88,58 @@ Use the dashboard to see exactly where your vehicles are. You can compare the Pl
 
 <figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-### 5. Handling Unexpected Waste (Ad-Hoc)
+### 5. Automating Operations: Route Scheduler
+
+Instead of creating trips manually every day, you can use the Route Scheduler to plan your operations for the entire month (or longer).
+
+How it works: You define the schedule once. When the scheduled time arrives, the system automatically creates the trip for that route, assigning the correct vehicle and driver without you needing to lift a finger.
+
+#### The Scheduler Dashboard
+
+The Scheduler gives you a calendar view of all your planned routes. You can see which routes are active and which days have shifts assigned.
+
+1. Navigate to Scheduler -> Shift Master.
+2. You will see a grid view showing dates and assigned routes.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### Creating a Custom Shift
+
+To set up a schedule, you create a "Shift". This tells the system which route to run and when.
+
+1. Click on Create Route.
+2. Select Custom Shift.
+3. Select Route: Choose the Master Route you want to schedule.
+4. Shift Name: Give it a clear name (e.g., "Morning Collection Zone A").
+5. Time: Set the Start Time and End Time for the shift.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Setting Recurring Schedules
+
+You usually don't want to schedule just one day. You want the route to run every Monday, Wednesday, and Friday, for example.
+
+1. Scroll down to the Schedule Shift checkbox.
+2. Select how often it repeats (e.g., Repeat Every 1 Week).
+3. Click the specific days (M, T, W, Th, F, Sa, Su) to activate them.
+4. Set an Ends date if you want the schedule to stop after a certain time (or leave it as "Never").
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+#### Assigning Resources (Vehicle & Driver)
+
+For the automation to work fully, you must tell the system who is driving.
+
+1. Under Additional Info, select the Vehicle that will handle this route.
+2. Select the Driver.
+3. (Optional) Set Threshold Times for idle alerts.
+4. Click Save Shift.
+
+_Note: When the scheduled time occurs, the system will generate a live Trip with these exact details._
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+### 6. Handling Unexpected Waste (Ad-Hoc)
 
 Sometimes you need to collect Bulky Waste or handle a request that isn't on the regular schedule. TripHub handles this without breaking your master routes.
 
@@ -111,7 +162,7 @@ Sometimes you need to collect Bulky Waste or handle a request that isn't on the 
 
 
 
-### 6. The Driver App
+### 7. The Driver App
 
 The mobile app is the driver's main tool for attendance and navigation.
 
@@ -156,7 +207,7 @@ The mobile app is the driver's main tool for attendance and navigation.
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-### 7. Hardware & Reports
+### 8. Hardware & Reports
 
 TripHub connects with smart hardware to keep your fleet safe and efficient.
 
