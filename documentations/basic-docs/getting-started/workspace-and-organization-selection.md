@@ -31,7 +31,7 @@ After you successfully authenticate via your username, password, and MFA (Multi-
 
 If you are a member of multiple organizations, they will appear as interactive tiles. Each tile shows the Organization name and its position in the tree.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.2 Using Search for Large Enterprises**
 
@@ -41,7 +41,7 @@ For users with access to hundreds of sub-branches (e.g., Super Admins), use the 
 2. The list will filter in real-time.
 3. Click the tile to enter that specific workspace.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Operational Impact of Selection
 
@@ -61,7 +61,7 @@ You do not need to log out to switch to a different organization. This is handle
 3. Click the name to reveal a dropdown list of your other accessible workspaces.
 4. Select a new organization; the screen will perform a "Soft Refresh" and update your asset list instantly.
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Frequently Asked Questions
 

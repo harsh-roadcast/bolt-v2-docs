@@ -15,7 +15,7 @@ Bolt V2 uses a utility-first design system built on **Tailwind CSS**. The goal i
   * **Client Side:** Designed for operational speed, featuring simplified menus focused on tracking and day-to-day logistics.
 * **Consistency:** Every page follows a standard layout: a collapsible **Navigation Sidebar** on the left, a **Contextual Navbar** at the top, and a dynamic **Workspace** in the center.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### The Contextual User Journey
 
@@ -45,7 +45,7 @@ The platform uses color and motion to communicate state without requiring the us
   * **Red:** Error (e.g., "403: You do not have permission to view this section").
 * **Map Marker Logic:** Vehicle icons on the map use a traffic-light color system (Green/Yellow/Red/Grey) to indicate engine and connection health instantly.
 
-<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Hardened Security UX (PRD Case 9.3)
 
