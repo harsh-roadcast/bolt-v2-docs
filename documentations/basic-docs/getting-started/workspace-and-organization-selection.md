@@ -31,7 +31,7 @@ After you successfully authenticate via your username, password, and MFA (Multi-
 
 If you are a member of multiple organizations, they will appear as interactive tiles. Each tile shows the Organization name and its position in the tree.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **2.2 Using Search for Large Enterprises**
 

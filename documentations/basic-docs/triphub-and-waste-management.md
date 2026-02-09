@@ -39,7 +39,7 @@ A Target is simply a bin or a collection point.
 3. Enter the waste type, bin size, and load capacity.
 4. Save your target.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Organizing Locations: Halt Points
 
@@ -101,7 +101,7 @@ The Scheduler gives you a calendar view of all your planned routes. You can see 
 1. Navigate to Scheduler -> Shift Master.
 2. You will see a grid view showing dates and assigned routes.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Creating a Custom Shift
 
@@ -113,7 +113,7 @@ To set up a schedule, you create a "Shift". This tells the system which route to
 4. Shift Name: Give it a clear name (e.g., "Morning Collection Zone A").
 5. Time: Set the Start Time and End Time for the shift.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 #### Setting Recurring Schedules
 
