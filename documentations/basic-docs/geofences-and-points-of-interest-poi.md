@@ -11,7 +11,7 @@ A Geofence is a virtual boundary drawn on the map. It acts as a trigger zone for
    * **Line (Geopath):** Best for route corridors.
 3. **Assign Properties:** Give it a name (e.g., "Central Depot") and assign it to a specific **Organization**.
 
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The Geofence creation screen with the Leaflet drawing toolbar active. **Target:** A map showing a "Polygon" being drawn around a building or area.
+<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 **1.2 Operational Logic: Alerts**
 
@@ -34,7 +34,7 @@ Use POIs to mark key locations that are relevant to your business but don't nece
 * **Common Use Cases:** Fuel Stations, Driver Rest Stops, Customer Offices, Blackspots (Accident Prone Areas).
 * **Visual Customization:** You can assign custom icons (e.g., a "Fuel Pump" icon) to make the map easier to read.
 
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The POI list or creation side-panel (`src/app/portal/maps/components/poi`). **Target:** The form showing the "Icon Picker" and "Address Search" fields.
+<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -47,7 +47,7 @@ Use POIs to mark key locations that are relevant to your business but don't nece
 | **Analytics**   | Used for TAT (Turn-Around Time) | Used for "Nearest Vehicle" search |
 | **Visuals**     | Colored Shape on Map            | Icon/Marker on Map                |
 
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The main Map View (`maps-screen.component.html`). **Target:** A view showing both a Polygon Geofence (colored area) and a POI Marker (icon) simultaneously to illustrate the visual difference.
+<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
