@@ -46,7 +46,22 @@ Data from the fuel sensors feeds into the **Analytics Module** to provide long-t
 * **Idling Waste:** The system calculates fuel consumed while the vehicle ignition was **ON** but the speed was **0**. This helps identify drivers who keep engines running during breaks.
 * **Mileage Integrity:** By comparing fuel consumption against the synced digital odometer, the system identifies vehicles with declining fuel efficiency, indicating a need for maintenance.
 
-#### 5. Troubleshooting Fuel Data
+#### 5. Logic Flow: Fuel Event Processing
+
+The following diagram explains how the system decides whether to alert you of a fuel change.
+
+```mermaid
+graph LR
+    Data[Sensor Data Received] --> Ign{Ignition ON?}
+    Ign -- Yes --> Cons[Track Normal Consumption]
+    Ign -- No --> Drop{Level Drop > 5%?}
+    Drop -- Yes --> Theft[ALERT: Potential Theft]
+    Drop -- No --> NoChange[Normal Evaporation/Settling]
+    
+    Cons --> Eff[Update Efficiency Report]
+```
+
+#### 6. Troubleshooting Fuel Data
 
 If fuel data appears incorrect, use the diagnostic steps mapped from the `TroubleshootComponent`:
 

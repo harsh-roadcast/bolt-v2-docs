@@ -9,7 +9,7 @@ The map workspace is divided into two functional areas: the **Interactive Map** 
 * **Panning & Zooming:** Use your mouse wheel to zoom in for street-level detail or out for a regional overview. You can click and drag the map to move across different territories.
 * **Auto-Fit Bounds:** Clicking the "Global View" icon will automatically adjust the zoom level to fit all active vehicles into a single screen.
 
-<figure><img src="../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Map Layers & Data Overlays
 
@@ -23,11 +23,11 @@ Bolt V2 allows you to customize your visual context using the **Layer Selector**
 {% column %}
 
 
-<figure><img src="../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
@@ -45,7 +45,7 @@ Use the search bar at the top of the vehicle list to find a vehicle by its **Pla
 
 The search bar on the map itself allows you to find addresses or coordinates. This is useful for checking how far a vehicle is from a specific client location.
 
-<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 4. Interacting with Vehicle Markers
 

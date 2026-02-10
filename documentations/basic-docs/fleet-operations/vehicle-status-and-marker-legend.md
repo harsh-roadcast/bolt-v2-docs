@@ -1,2 +1,0 @@
-# Vehicle Status & Marker Legend
-
