@@ -1,16 +1,14 @@
 # Table of contents
 
-* [Developer Platform API](README.md)
+* [Consume & Push APIs](README.md)
 
-## Reference
+## APIs
 
-* ```yaml
-  props:
-    models: false
-  type: builtin:openapi
-  dependencies:
-    spec:
-      ref:
-        kind: openapi
-        spec: gitbook-petstore
-  ```
+* [Consume Position API](apis/consume-position-api.md)
+* [Position Push API](apis/position-push-api.md)
+* [Events Push API](apis/events-push-api.md)
+
+## Appendix
+
+* [Data Standards](appendix/data-standards.md)
+* [Error Codes](appendix/error-codes.md)

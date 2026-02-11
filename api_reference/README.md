@@ -20,18 +20,30 @@ metaLinks:
     - https://app.gitbook.com/s/M9ty6FYa3j98VSBHF9LN/
 ---
 
-# Developer Platform API
+# Consume & Push APIs
 
-## Summary
+**Version:** 2.0\
+**Last Updated:** 2026-02-11 UTC
 
-* Home
+This documentation defines the enterprise integration specifications for:
 
-### APIs
+1. Consume Position API (Device → Server ingestion)
+2. Position Push API (Server → Client data delivery)
+3. Events Push API (Server → Client data delivery)
 
-* Consume API v2
-* Tracking Push Payload API
+***
 
-### Appendix
+### Architecture Overview
 
-* Error Codes
-* Data Standards
+#### Data Ingestion Flow
+
+Device → Middleware → Consume API → Processing Engine → Storage
+
+#### Data Push Flow
+
+Device → Platform → Client Endpoint
+
+***
+
+All timestamps are in UTC.\
+Coordinate system: WGS‑84.
