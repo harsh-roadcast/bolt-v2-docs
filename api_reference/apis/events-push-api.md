@@ -67,17 +67,16 @@ POST
 
 ### Payload Field Definitions
 
-| Field        | Type    | Description                                                         |
-| ------------ | ------- | ------------------------------------------------------------------- |
-| Event        | String  | Type of event (e.g., overspeed, fuel\_fill, geofence)               |
-| Changes      | Integer | Event-specific value (e.g., fuel change in liters, overspeed delta) |
-| Device\_Time | String  | Timestamp when event occurred on device (ISO 8601 with timezone)    |
-| IMEI         | String  | IMEI number of the reporting device                                 |
-| Server\_Time | String  | Timestamp when event was received by server                         |
-| Coordinates  | String  | Latitude,Longitude format                                           |
-| Location     | String  | Human-readable address                                              |
-
-### Geofence\_Name String / Null Geofence name if applicable
+| Field          | Type          | Description                                                         |
+| -------------- | ------------- | ------------------------------------------------------------------- |
+| Event          | String        | Type of event (e.g., overspeed, fuel\_fill, geofence)               |
+| Changes        | Integer       | Event-specific value (e.g., fuel change in liters, overspeed delta) |
+| Device\_Time   | String        | Timestamp when event occurred on device (ISO 8601 with timezone)    |
+| IMEI           | String        | IMEI number of the reporting device                                 |
+| Server\_Time   | String        | Timestamp when event was received by server                         |
+| Coordinates    | String        | Latitude,Longitude format                                           |
+| Location       | String        | Human-readable address                                              |
+| Geofence\_Name | String / Null | Geofence name if applicable                                         |
 
 ***
 
