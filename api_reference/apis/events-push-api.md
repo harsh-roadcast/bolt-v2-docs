@@ -160,29 +160,34 @@ If the client endpoint does not return HTTP 200:
 
 ### Security Best Practices
 
-* Use HTTPS (TLS 1.2+)\\
-* Validate Bearer token (if enabled)\\
-* Whitelist server IPs\\
+* Use HTTPS (TLS 1.2+)
+* Validate Bearer token (if enabled)
+* Whitelist server IPs
 * Implement request signature verification (optional enterprise enhancement)
 
 ***
 
 ### Validation Rules
 
-* Coordinates must be in latitude,longitude format\\
-* IMEI must be numeric and 15 digits\\
-* Device\_Time ≤ Server\_Time\\
+* Coordinates must be in latitude,longitude format
+* IMEI must be numeric and 15 digits
+* Device\_Time ≤ Server\_Time
 * Event field cannot be empty
 
 ***
 
-### Supported Event Types (Indicative)
+### Supported Event Types (Indicative)  &#x20;
 
-Event Description
-
-***
-
-overspeed Speed threshold exceeded fuel\_fill Fuel filling detected fuel\_drain Fuel theft detected geofence\_enter Entered geofence geofence\_exit Exited geofence tampering Device tampering power\_cut External power disconnected sos Emergency alert
+| Event           | Description                 |
+| --------------- | --------------------------- |
+| overspeed       | Speed threshold exceeded    |
+| fuel\_fill      | Fuel filling detected       |
+| fuel\_drain     | Fuel theft detected         |
+| geofence\_enter | Entered geofence            |
+| geofence\_exit  | Exited geofence             |
+| tampering       | Device tampering            |
+| power\_cut      | External power disconnected |
+| sos             | Emergency alert             |
 
 ***
 

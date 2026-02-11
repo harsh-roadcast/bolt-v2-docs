@@ -10,6 +10,34 @@ The platform sends HTTP POST requests to a client-configured endpoint whenever a
 
 ***
 
+### Endpoint
+
+The endpoint URL is provided by the client.
+
+Example:
+
+```
+POST https://client-domain.com/api/events
+```
+
+***
+
+### HTTP Method
+
+```
+POST
+```
+
+***
+
+### Request Headers
+
+&#x20;Value
+
+<table><thead><tr><th width="220">Header</th><th width="521">Value</th></tr></thead><tbody><tr><td>Content-Type</td><td> application/json </td></tr><tr><td>Authorization</td><td> Bearer <code>&#x3C;token></code>{=html} (Optional, if enabled)</td></tr></tbody></table>
+
+***
+
 ### Sample Payload
 
 ```json
