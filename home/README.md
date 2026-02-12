@@ -4,7 +4,7 @@ icon: house
 
 # Home
 
-<figure><img src=".gitbook/assets/image (3).png" alt="" width="428"><figcaption></figcaption></figure>
+<figure><picture><source srcset=".gitbook/assets/image (1).png" media="(prefers-color-scheme: dark)"><img src=".gitbook/assets/image (3).png" alt="" width="375"></picture><figcaption></figcaption></figure>
 
 ## Welcome to the BOLT V2&#x20;
 
