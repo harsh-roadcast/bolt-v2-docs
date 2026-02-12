@@ -17,7 +17,7 @@ The endpoint URL is provided by the client.
 Example:
 
 ```
-POST https://client-domain.com/api/events
+POST https://client-domain.com/api/pos
 ```
 
 ***
