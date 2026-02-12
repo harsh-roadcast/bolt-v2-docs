@@ -6,7 +6,7 @@ icon: house
 
 <figure><img src=".gitbook/assets/image (3).png" alt="" width="428"><figcaption></figcaption></figure>
 
-## Welcome to the BOLT V2 docs
+## Welcome to the BOLT V2&#x20;
 
 You’re in the right place if you run fleets, field assets, or on‑ground teams.
 
