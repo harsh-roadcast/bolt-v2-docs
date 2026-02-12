@@ -12,7 +12,7 @@ Live streaming allows you to "ride along" with the driver in real-time.
 2. **Open Video Panel:** Click the **"Live Video"** tab in the side panel.
 3. **Select Channel:** Choose which camera to view (e.g., _Channel 1: Road Facing_, _Channel 2: Driver Facing_).
 
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The Vehicle Side Panel with the "Video" tab active. **Target:** A view showing the video player frame with channel selection buttons (CH1, CH2, CH3, CH4).
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 **1.2 Multi-Camera Grid**
 
@@ -55,21 +55,24 @@ When a video event is triggered:
 1. An alert appears in the **Notification Manager**.
 2. Clicking the alert opens the **Event Replay** modal immediately, showing the footage of the incident.
 
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The Notification or Alert list showing a "Sleepy Driver" event. **Target:** The expanded alert card showing the video thumbnail/snapshot.
-
 #### 4. Data Flow & Storage Logic
 
 Understanding where video lives is critical for managing data costs.
 
-```
+```mermaid
 graph TD
     Cam[Camera Lens] --> MDVR[Vehicle MDVR Storage]
+    
     MDVR --> Logic{Event Triggered?}
-    Logic -- Yes (Crash/AI) --> Upload[Auto-Upload to Cloud]
-    Logic -- No (Routine) --> Local[Keep on SD Card (Loop Recording)]
-    User[User Requests Playback] --> CMD[Send Command to MDVR]
-    CMD --> Upload
-    Upload --> Cloud[Bolt V2 Cloud Storage]
+    
+    Logic -- Yes (Crash/AI) --> Auto[Auto-Upload to Cloud]
+    Logic -- No (Routine) --> Local[Keep on SD Card / Loop]
+    
+    User[User Requests Playback] --> CMD[Send Fetch Command]
+    CMD --> MDVR
+    MDVR -.->|Requested Clip| Auto
+    
+    Auto --> Cloud[Bolt V2 Cloud Storage]
     Cloud --> Player[User Dashboard Player]
 ```
 
@@ -84,4 +87,3 @@ graph TD
 | **"Channel Loss"**   | Loose Cable  | If CH1 works but CH2 is black, check the physical aviation connector on the MDVR box.                     |
 | **Lag/Choppy Video** | Poor Signal  | The vehicle is in a 2G zone. Video requires strong 4G/LTE. Wait for the vehicle to move to a better area. |
 
-> **Audit & Security:** Access to the Video Module is governed by strict RBAC. Per **Logic Case 9.2**, a user from _Branch B_ cannot view the camera feed of a vehicle belonging to _Branch A_, ensuring driver privacy and operational security.

@@ -10,7 +10,7 @@ To manage your account, locate the **User Avatar** or your initials in the top r
 2. Select **"Profile"** from the list.
 3. You will be directed to the main settings page where your information is categorized into tabs (General, Security, Preferences).
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 #### 2. Personal Information
 
@@ -20,7 +20,7 @@ The **General** tab contains your primary identity details used for communicatio
 * **Email Address:** Your primary login identifier.
 * **Phone Number:** Your mobile contact, which is critical for receiving SMS-based MFA codes and emergency alerts.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Security & Authentication
 
@@ -43,7 +43,7 @@ In the **Preferences** tab, you can tailor the interface to your local operation
 * **Timezone:** Set your local timezone to ensure all "Time Since" markers and Report timestamps are accurate to your location.
 * **Default Map View:** Set your preferred starting map layer (Standard, Satellite, or Traffic).
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Profile Management Workflow
 
