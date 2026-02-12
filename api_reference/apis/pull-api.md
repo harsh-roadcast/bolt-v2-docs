@@ -5,6 +5,18 @@
 This API provides real-time tracking and vehicle telematics data. It returns detailed position and\
 status data for all associated devices.
 
+### Authentication
+
+This API uses **Basic Authentication**.
+
+#### Example Header
+
+```
+Authorization: Basic bGl0aGl1bTpBYmNAMTIz
+```
+
+<p align="center">Replace the encoded string with your Base64-encoded <strong>username:password</strong>.</p>
+
 ### Endpoint
 
 ```
