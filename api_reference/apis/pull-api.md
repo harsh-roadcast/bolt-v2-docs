@@ -11,7 +11,7 @@ This API uses **Basic Authentication**.
 
 #### Example Header
 
-```
+```bash
 Authorization: Basic bGl0aGl1bTpBYmNAMTIz
 ```
 
@@ -19,7 +19,7 @@ Authorization: Basic bGl0aGl1bTpBYmNAMTIz
 
 ### Endpoint
 
-```
+```bash
 GET https://example.com/api/v1/auth/pull_api_v2?show_address=true
 ```
 
@@ -45,7 +45,7 @@ GET
 
 ### Sample cURL
 
-```
+```bash
 curl --location 'https://test-track.roadcast.net/api/v1/auth/pull_api_v2?
 show_address=true' \
 --header 'Authorization: Basic bGl0aGl1bTpBYmNAMTIz' \
@@ -54,7 +54,7 @@ show_address=true' \
 
 ### Response Structure
 
-```
+```json
 {
 "data": [...],
 "error": [...]
@@ -69,23 +69,7 @@ show_address=true' \
 
 **Vehicle & Movement Alerts**
 
-| Alert                                      | Description                                                  |
-| ------------------------------------------ | ------------------------------------------------------------ |
-| accident                                   | Crash detected based on impact sensor data.                  |
-| movement                                   | Vehicle started moving.                                      |
-| overspeed                                  | Vehicle exceeded configured speed limit.                     |
-| tow                                        | Vehicle is being towed (ignition off but movement detected). |
-| vibration                                  | Vibration detected while parked.                             |
-| shock                                      | Strong impact detected.                                      |
-| hardAcceleration                           | Sudden aggressive acceleration.                              |
-| hardBraking                                | Sudden harsh braking.                                        |
-| hardCornering                              | Sharp turn at high speed.                                    |
-| laneChange                                 | Sudden lane change detected.                                 |
-| laneDepartureAlam                          | Vehicle drifting out of lane.                                |
-| dangerousDriving                           | Risky driving behavior detected.                             |
-| forwardCollisionAlarm                      | Risk of front collision detected.                            |
-| pedestrianCollisionAlarm                   | Risk of hitting pedestrian detected.                         |
-| vehicleDistanceTooCloseToFrontVehicleAlarm | Unsafe following distance.                                   |
+<table><thead><tr><th width="370.80859375">Alert</th><th>Description</th></tr></thead><tbody><tr><td>accident</td><td>Crash detected based on impact sensor data.</td></tr><tr><td>movement</td><td>Vehicle started moving.</td></tr><tr><td>overspeed</td><td>Vehicle exceeded configured speed limit.</td></tr><tr><td>tow</td><td>Vehicle is being towed (ignition off but movement detected).</td></tr><tr><td>vibration</td><td>Vibration detected while parked.</td></tr><tr><td>shock</td><td>Strong impact detected.</td></tr><tr><td>hardAcceleration</td><td>Sudden aggressive acceleration.</td></tr><tr><td>hardBraking</td><td>Sudden harsh braking.</td></tr><tr><td>hardCornering</td><td>Sharp turn at high speed.</td></tr><tr><td>laneChange</td><td>Sudden lane change detected.</td></tr><tr><td>laneDepartureAlam</td><td>Vehicle drifting out of lane.</td></tr><tr><td>dangerousDriving</td><td>Risky driving behavior detected.</td></tr><tr><td>forwardCollisionAlarm</td><td>Risk of front collision detected.</td></tr><tr><td>pedestrianCollisionAlarm</td><td>Risk of hitting pedestrian detected.</td></tr><tr><td>vehicleDistanceTooCloseToFrontVehicleAlarm</td><td>Unsafe following distance.</td></tr></tbody></table>
 
 **Power & Battery Alerts**
 
