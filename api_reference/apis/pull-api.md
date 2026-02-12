@@ -12,7 +12,7 @@ This API uses **Basic Authentication**.
 #### Example Header
 
 ```bash
-Authorization: Basic bGl0aGl1bTpBYmNAMTIz
+Authorization: Basic abcd123efgh4567890
 ```
 
 <p align="center">Replace the encoded string with your Base64-encoded <strong>username:password</strong>.</p>
