@@ -8,7 +8,7 @@ status data for all associated devices.
 ### Endpoint
 
 ```
-GET https://test-track.roadcast.net/api/v1/auth/pull_api_v2?show_address=true
+GET https://example.com/api/v1/auth/pull_api_v2?show_address=true
 ```
 
 ### HTTP Method
