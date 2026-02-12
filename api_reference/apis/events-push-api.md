@@ -178,16 +178,37 @@ If the client endpoint does not return HTTP 200:
 
 ### Supported Event Types (Indicative)  &#x20;
 
-| Event           | Description                 |
-| --------------- | --------------------------- |
-| overspeed       | Speed threshold exceeded    |
-| fuel\_fill      | Fuel filling detected       |
-| fuel\_drain     | Fuel theft detected         |
-| geofence\_enter | Entered geofence            |
-| geofence\_exit  | Exited geofence             |
-| tampering       | Device tampering            |
-| power\_cut      | External power disconnected |
-| sos             | Emergency alert             |
+| Label                           | Short Description                                                                  |
+| ------------------------------- | ---------------------------------------------------------------------------------- |
+| stoppage                        | The vehicle has come to a complete stop for a specific duration.                   |
+| geofenceExit                    | The device has exited a pre-defined geographical boundary.                         |
+| geofenceEnter                   | The device has entered a pre-defined geographical boundary.                        |
+| geofenceSpeedLimitExceed        | The vehicle exceeded the specific speed limit assigned to a geofence.              |
+| engineResume                    | The engine has resumed operation after a stop or cut-off.                          |
+| engineStop                      | The engine has been turned off or remotely immobilized.                            |
+| ignitionOn                      | The vehicle ignition has been turned on (key in).                                  |
+| ignitionOff                     | The vehicle ignition has been turned off.                                          |
+| over\_ignition                  | The ignition has been on for an excessive period without movement.                 |
+| ac\_idle                        | The air conditioning is running while the vehicle is stationary (idling).          |
+| idle                            | The engine is running, but the vehicle is not moving.                              |
+| night\_driving / nightDriving   | The vehicle is being operated during restricted night hours.                       |
+| deviceOverspeed                 | The vehicle has exceeded the configured global speed limit.                        |
+| over\_motion                    | Excessive motion or vibration detected (often while parked or towed).              |
+| RouteDeviation / routeDeviation | The vehicle has strayed from its assigned or scheduled path.                       |
+| delayed\_trip\_start            | The trip did not begin by the scheduled start time.                                |
+| delay\_in\_trip\_end            | The trip was not completed by the scheduled end time.                              |
+| etaStartTrip                    | Estimated Time of Arrival calculation for the start of a trip.                     |
+| etaEndTrip                      | Estimated Time of Arrival calculation for the end of a trip.                       |
+| etaDelayedTripEnd               | The estimated arrival time suggests the trip will finish later than scheduled.     |
+| etaHaltPointReach               | The vehicle has reached a scheduled intermediate stop (halt point).                |
+| etaHaltPointExit                | The vehicle has left a scheduled intermediate stop.                                |
+| network\_disconnect             | The device has lost connection to the cellular network.                            |
+| gps\_disconnect                 | The device has lost the GPS satellite signal (no location fix).                    |
+| imeiChanged                     | The SIM card or device hardware (IMEI) associated with the asset has changed.      |
+| driverChanged                   | A new driver has been identified (e.g., via RFID or iButton).                      |
+| commandResult                   | The response or acknowledgement of a remote command sent to the device.            |
+| temperature                     | A periodic reading or alert regarding the device or cargo temperature.             |
+| documentExpiry                  | An alert that a vehicle or driver document (e.g., license, insurance) is expiring. |
 
 ***
 
