@@ -20,7 +20,7 @@ Authorization: Basic abcd123efgh4567890
 ### Endpoint
 
 ```bash
-GET https://example.com/api/v1/auth/pull_api_v2?show_address=true
+GET https://client-domain.com/api/v1/auth/pull_api_v2?show_address=true
 ```
 
 ### HTTP Method
