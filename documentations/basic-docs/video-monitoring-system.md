@@ -32,7 +32,7 @@ Retrieving past footage requires a specific "Request" workflow because video fil
 3. **Fetch:** Click "Request Clip."
 4. **System Logic:** The server wakes up the device, locates the specific file segment, and uploads it to the cloud. Once uploaded, the status changes from **"Pending"** to **"Available."**
 
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The Video History or "Request Footage" dialog. **Target:** The timeline slider and the "Fetch/Download" button.
+
 
 #### 3. ADAS & DMS Event Logic
 

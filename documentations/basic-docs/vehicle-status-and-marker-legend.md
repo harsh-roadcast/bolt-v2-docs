@@ -13,7 +13,7 @@ Each vehicle marker on the map is color-coded based on its real-time telemetry d
 | **Parked**   | **Red**    | Ignition **OFF**                | The vehicle is completely shut down. The engine is off, and it is parked at a location.                                                   |
 | **Inactive** | **Grey**   | No Data > **10 Mins**           | The device has stopped communicating with the server. This could be due to a power cut, dead battery, or cellular network loss (No GPRS). |
 
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The Live Map view (`src/app/portal/maps/components/maps`). **Target:** A cluster or group of vehicles showing examples of Green (Moving), Yellow (Idle), Red (Parked), and Grey (Inactive) markers side-by-side.
+<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Vehicle Type Icons
 
@@ -24,8 +24,6 @@ Bolt V2 differentiates assets not just by status, but by type. The system render
 * **Bike:** Motorcycle icon for last-mile delivery.
 * **Ambulance:** Emergency vehicle marked with a medical cross.
 * **ID Card:** Used for personal trackers or high-value cargo tags (non-vehicular).
-
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The "Asset Type" filter dropdown or a map view populated with mixed vehicle types. **Target:** Distinct icons for a Truck, Bike, and Ambulance visible on the map.
 
 #### 3. Advanced Status Indicators
 
@@ -40,8 +38,6 @@ Beyond the basic color, the marker itself can display badges to indicate critica
 
 * **Visual:** The marker radiates a concentric "Pulse" animation.
 * **Meaning:** A high-priority alert (SOS/Panic Button, Crash Detection, or Geofence Breach) has been triggered within the last minute.
-
-> \[!SCREENSHOT\_MARKER] **Capture Location:** A vehicle marker on the map that has been "Immobilized." **Target:** Close-up of the marker showing the overlay "Lock" icon.
 
 #### 4. Logic Flow: Status Determination
 
@@ -70,5 +66,3 @@ graph TD
 | **Marker stuck on "Moving"**            | GPS Latch / Freeze | The device may have lost GPS fix while moving. Check the "Satellites" count in the sensor card. |
 | **Vehicle is running but shows "Grey"** | Network Blindspot  | The vehicle is in a basement or tunnel. Data will "burst" upload once connectivity is restored. |
 | **"Idle" for hours**                    | Driver Behavior    | Driver may be sleeping with AC on. Check "Fuel Consumption" to verify waste.                    |
-
-> \[!SCREENSHOT\_MARKER] **Capture Location:** The Vehicle Detail/Sensor Card panel (`src/app/portal/maps/components/mapsScreen`). **Target:** The "Satellites" and "Last Updated" fields which are critical for diagnosing status issues.
