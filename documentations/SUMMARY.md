@@ -9,6 +9,7 @@
   * [Workspace & Organization Selection](basic-docs/getting-started/workspace-and-organization-selection.md)
   * [User Profile & Preferences](basic-docs/getting-started/user-profile-and-preferences.md)
   * [Troubleshooting](basic-docs/getting-started/troubleshooting.md)
+* [Role-Based Access Control (RBAC)](basic-docs/role-based-access-control-rbac.md)
 * [Fleet Operations](basic-docs/fleet-operations.md)
 * [Real-time Map Navigation](basic-docs/real-time-map-navigation.md)
 * [Vehicle Status & Marker Legend](basic-docs/vehicle-status-and-marker-legend.md)
