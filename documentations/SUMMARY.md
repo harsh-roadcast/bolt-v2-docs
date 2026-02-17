@@ -20,6 +20,7 @@
 * [TripHub & Waste Management](basic-docs/triphub-and-waste-management.md)
 * [StiQR](basic-docs/stiqr.md)
 * [Yard & Warehouse Management](basic-docs/yard-and-warehouse-management.md)
+* [Documents Management System](basic-docs/documents-management-system.md)
 * [Analytics & Reporting Module](basic-docs/analytics-and-reporting-module.md)
 * [Advanced Notifications](basic-docs/advanced-notifications.md)
 * [Administration](basic-docs/administration/README.md)

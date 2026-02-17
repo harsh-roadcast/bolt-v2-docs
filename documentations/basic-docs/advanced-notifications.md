@@ -36,9 +36,9 @@ Instead of alerting on _every_ spike, adding "Advanced Conditions" allows you to
 * **Value-Based:** "Power Cut" **AND** "Voltage < 11.5V." (Ignores minor fluctuations).
 * **Time-Based:** "Geofence Entry" **AND** "Time is between 10:00 PM - 5:00 AM." (Night shift security).
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. Step 2: Target Devices
 
@@ -48,7 +48,7 @@ This step defines _who_ (which vehicles) the rule applies to.
 * **Filtering:** Use the sidebar to filter by Device Type (GPS, Dashcam, Fuel Sensor) or Status (Active/Inactive).
 * **Summary:** The footer displays a "Selection Summary" (e.g., "Rule applies to 45 Devices").
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 4. Step 3: Routing & Recipient Logic
 
@@ -67,7 +67,7 @@ You can add multiple rules for a single alert:
 * **Quiet Hours (DND):** Configure a global "Silence Window" (e.g., weekends) where non-critical alerts are suppressed or queued.
 * **Deduplication:** The system automatically merges identical alerts that occur within a short window (e.g., 1 minute) to prevent spamming your inbox.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Managing & Simulating Rules
 
