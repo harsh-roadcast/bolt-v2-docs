@@ -21,6 +21,7 @@
 * [StiQR](basic-docs/stiqr.md)
 * [Yard & Warehouse Management](basic-docs/yard-and-warehouse-management.md)
 * [Analytics & Reporting Module](basic-docs/analytics-and-reporting-module.md)
+* [Advanced Notifications](basic-docs/advanced-notifications.md)
 * [Administration](basic-docs/administration/README.md)
   * [Administration & Governance](basic-docs/administration/administration-and-governance.md)
   * [Billing & Enterprise Wallet Logic](basic-docs/administration/billing-and-enterprise-wallet-logic.md)

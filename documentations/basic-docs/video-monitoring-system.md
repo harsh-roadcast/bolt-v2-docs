@@ -12,7 +12,7 @@ Live streaming allows you to "ride along" with the driver in real-time.
 2. **Open Video Panel:** Click the **"Live Video"** tab in the side panel.
 3. **Select Channel:** Choose which camera to view (e.g., _Channel 1: Road Facing_, _Channel 2: Driver Facing_).
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 **1.2 Multi-Camera Grid**
 

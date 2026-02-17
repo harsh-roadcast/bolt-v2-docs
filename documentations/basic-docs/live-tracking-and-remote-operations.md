@@ -91,7 +91,7 @@ For vehicles equipped with supported hardware, operators can send remote command
 
 ### 5. Managing Zones (Geofences & POIs)
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The tracking screen also allows you to manage your virtual boundaries. Switch tabs in the left sidebar to view:
 

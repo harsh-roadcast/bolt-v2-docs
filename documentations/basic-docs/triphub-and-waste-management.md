@@ -13,7 +13,7 @@ A Target is simply a bin or a collection point.
 * Details: Each target has a name, address, and specific GPS coordinates.
 * Frequency: You can set how often a bin needs to be picked up. If you set the frequency to more than 1, the system automatically creates duplicate requests for you.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### How to Create a Target
 
@@ -22,7 +22,7 @@ A Target is simply a bin or a collection point.
 3. Enter the waste type, bin size, and load capacity.
 4. Save your target.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Organizing Locations: Halt Points
 
@@ -35,7 +35,7 @@ A Halt Point is a specific location where the truck stops. A single halt point c
 * Geo-Fencing: You define a radius (area covered) to ensure the driver is at the right spot.
 * Linked Targets: You can link multiple bins to one stop.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 3. Planning Your Routes
 
@@ -52,7 +52,7 @@ Important Rules:
 * No Adding New Targets: You cannot add a completely new target to an active route. You must create a new route if you need to add a new stop.
 * Exchange Service: If you are swapping a bin (Exchange), you must add a corresponding "Drop" location to the route.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Daily Operations: Trips
 
@@ -63,13 +63,13 @@ A Trip is the actual execution of a route on a specific day. This is where you a
 * Assign Resources: Select a vehicle and a driver for the route.
 * Status Tracking: Monitor the trip status as it changes from _Assigned_ to _In Progress_, _Breakdown_, or _Completed_.
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Real-Time Monitoring
 
 Use the dashboard to see exactly where your vehicles are. You can compare the Planned vs Actual timings to check for delays.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Automating Operations: Route Scheduler
 
@@ -84,7 +84,7 @@ The Scheduler gives you a calendar view of all your planned routes. You can see 
 1. Navigate to Scheduler -> Shift Master.
 2. You will see a grid view showing dates and assigned routes.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Creating a Custom Shift
 
@@ -96,7 +96,7 @@ To set up a schedule, you create a "Shift". This tells the system which route to
 4. Shift Name: Give it a clear name (e.g., "Morning Collection Zone A").
 5. Time: Set the Start Time and End Time for the shift.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Setting Recurring Schedules
 
@@ -107,7 +107,7 @@ You usually don't want to schedule just one day. You want the route to run every
 3. Click the specific days (M, T, W, Th, F, Sa, Su) to activate them.
 4. Set an Ends date if you want the schedule to stop after a certain time (or leave it as "Never").
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Assigning Resources (Vehicle & Driver)
 
@@ -120,7 +120,7 @@ For the automation to work fully, you must tell the system who is driving.
 
 _Note: When the scheduled time occurs, the system will generate a live Trip with these exact details._
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 6. Handling Unexpected Waste (Ad-Hoc)
 
