@@ -18,6 +18,7 @@
 * [Live Tracking & Remote Operations](basic-docs/live-tracking-and-remote-operations.md)
 * [Geofences & Points of Interest (POI)](basic-docs/geofences-and-points-of-interest-poi.md)
 * [TripHub & Waste Management](basic-docs/triphub-and-waste-management.md)
+* [StiQR](basic-docs/stiqr.md)
 * [Yard & Warehouse Management](basic-docs/yard-and-warehouse-management.md)
 * [Administration](basic-docs/administration/README.md)
   * [Administration & Governance](basic-docs/administration/administration-and-governance.md)
