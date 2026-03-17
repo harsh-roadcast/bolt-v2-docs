@@ -8,6 +8,7 @@
 * [Position Push API](apis/position-push-api.md)
 * [Events Push API](apis/events-push-api.md)
 * [Pull API](apis/pull-api.md)
+* [Video Event Push API](apis/video-event-push-api.md)
 
 ## Appendix
 
