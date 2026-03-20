@@ -15,6 +15,7 @@
 * [Vehicle Status & Marker Legend](basic-docs/vehicle-status-and-marker-legend.md)
 * [Fuel Management & Monitoring](basic-docs/fuel-management-and-monitoring.md)
 * [Service Management System](basic-docs/service-management-system.md)
+* [Employee Management System (EMS)](basic-docs/employee-management-system-ems.md)
 * [Video Monitoring System](basic-docs/video-monitoring-system.md)
 * [Live Tracking & Remote Operations](basic-docs/live-tracking-and-remote-operations.md)
 * [Geofences & Points of Interest (POI)](basic-docs/geofences-and-points-of-interest-poi.md)
