@@ -24,7 +24,7 @@ _Configured by Client_
 POST https://api.example-platform.com/report/graphql/GeneratePublicLiveStreamingUrls
 ```
 
-### HTTP Method
+#### HTTP Method
 
 ```http
 POST
@@ -37,7 +37,7 @@ POST
 | Content-Type | `application/json`   |
 | X-API-KEY    | your\_api\_key\_here |
 
-### Sample Request
+#### Sample Request
 
 This is an example of the cURL request you will send to the endpoint:
 
