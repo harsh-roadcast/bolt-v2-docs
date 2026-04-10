@@ -10,24 +10,40 @@ All examples below use **sanitized domains, API keys, IMEIs, and response values
 
 ***
 
-## 1. Generate Public Live Streaming URLs
+### Generate Public Live Streaming URLs
 
 Generates temporary URLs for **live camera streaming** and **history playback** for a given device.
 
-### Endpoint
+#### Authentication
+
+{% hint style="info" %}
+Note: As this is a Push API, the client must verify incoming requests from the server.
+{% endhint %}
+
+All APIs require the header:
+
+```
+X-API-KEY: your_api_key_here
+```
+
+#### Endpoint
+
+{% hint style="info" %}
+_Configured by Client_
+{% endhint %}
 
 ```
 POST https://api.example-platform.com/report/graphql/GeneratePublicLiveStreamingUrls
 ```
 
-### Headers
+#### Headers
 
-```
-X-API-KEY: your_api_key_here
-Content-Type: application/json
-```
+| Header       | Value                |
+| ------------ | -------------------- |
+| Content-Type | `application/json`   |
+| X-API-KEY    | your\_api\_key\_here |
 
-### Request Body
+#### Request Body
 
 ```json
 {
@@ -37,7 +53,7 @@ Content-Type: application/json
 }
 ```
 
-### Parameters
+#### Parameters
 
 | Field           | Type    | Description                      |
 | --------------- | ------- | -------------------------------- |
@@ -46,7 +62,7 @@ Content-Type: application/json
 
 ***
 
-### Sample Response
+#### Sample Response
 
 ```json
 {
@@ -62,24 +78,24 @@ Content-Type: application/json
 
 ***
 
-## 2. Get Device ID Using IMEI
+### Get Device ID Using IMEI
 
 Retrieves device metadata including **Device ID**, which is required for most telemetry and reporting APIs.
 
-### Endpoint
+#### Endpoint
 
 ```
 POST https://api.example-platform.com/fleet/graphql/DeviceQuery
 ```
 
-### Headers
+#### Headers
 
 ```
 X-API-KEY: your_api_key_here
 Content-Type: application/json
 ```
 
-### Request Body
+#### Request Body
 
 ```json
 {
@@ -95,7 +111,7 @@ Content-Type: application/json
 
 ***
 
-### Sample Response
+#### Sample Response
 
 ```json
 {
@@ -117,17 +133,17 @@ Content-Type: application/json
 
 ***
 
-## 3. Fetch Device Path History
+### Fetch Device Path History
 
 Returns **historical GPS and telemetry data** for one or more devices between a time range.
 
-### Endpoint
+#### Endpoint
 
 ```
 POST https://api.example-platform.com/graphql
 ```
 
-### Headers
+#### Headers
 
 ```
 X-API-KEY: your_api_key_here
@@ -136,7 +152,7 @@ Content-Type: application/json
 
 ***
 
-### Request Body
+#### Request Body
 
 ```json
 {
@@ -163,7 +179,7 @@ Content-Type: application/json
 
 ***
 
-### Parameters
+#### Parameters
 
 | Field                   | Type     | Description                     |
 | ----------------------- | -------- | ------------------------------- |
@@ -174,7 +190,7 @@ Content-Type: application/json
 
 ***
 
-### Sample Response
+#### Sample Response
 
 ```json
 {
@@ -216,7 +232,7 @@ Content-Type: application/json
 
 ***
 
-## Typical Integration Flow
+### Typical Integration Flow
 
 Clients typically follow this order when integrating:
 
@@ -238,19 +254,9 @@ Clients typically follow this order when integrating:
 
 ***
 
-## Authentication
-
-All APIs require the header:
-
-```
-X-API-KEY: your_api_key_here
-```
-
-Requests without a valid API key will be rejected.
-
 ***
 
-## Notes
+#### Notes
 
 * Streaming URLs are **time-limited** and expire automatically.
 * Path history queries may return **large datasets** depending on the time range.
