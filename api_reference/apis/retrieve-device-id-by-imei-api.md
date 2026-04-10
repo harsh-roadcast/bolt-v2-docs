@@ -6,6 +6,10 @@ Retrieves device metadata including Device ID, which is a required parameter for
 
 ### Authentication
 
+{% hint style="info" %}
+**Note**: As this is a Push API, the client must verify incoming requests from the server.
+{% endhint %}
+
 This API uses API Key authentication configured by the client.
 
 ```http
@@ -13,6 +17,10 @@ X-API-KEY: your_api_key_here
 ```
 
 ### Endpoint
+
+{% hint style="info" %}
+_Configured by Client_
+{% endhint %}
 
 ```http
 POST https://api.example-platform.com/fleet/graphql/DeviceQuery
