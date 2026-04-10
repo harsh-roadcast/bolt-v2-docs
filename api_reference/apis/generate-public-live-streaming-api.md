@@ -2,7 +2,7 @@
 
 Generates temporary URLs for **live camera streaming** and **history playback** for a given device.
 
-#### Authentication
+### Authentication
 
 {% hint style="info" %}
 Note: As this is a Push API, the client must verify incoming requests from the server.
@@ -14,7 +14,7 @@ All APIs require the header:
 X-API-KEY: your_api_key_here
 ```
 
-#### Endpoint
+### Endpoint
 
 {% hint style="info" %}
 _Configured by Client_
@@ -24,20 +24,20 @@ _Configured by Client_
 POST https://api.example-platform.com/report/graphql/GeneratePublicLiveStreamingUrls
 ```
 
-#### HTTP Method
+### HTTP Method
 
 ```http
 POST
 ```
 
-#### Request Headers
+### Request Headers
 
 | Header       | Value                |
 | ------------ | -------------------- |
 | Content-Type | `application/json`   |
 | X-API-KEY    | your\_api\_key\_here |
 
-#### Sample Request
+### Sample Request
 
 This is an example of the cURL request you will send to the endpoint:
 
@@ -52,7 +52,7 @@ curl --location 'https://api.example-platform.com/report/graphql/GeneratePublicL
 }'
 ```
 
-#### Request Body
+### Request Body
 
 ```json
 {
@@ -62,7 +62,7 @@ curl --location 'https://api.example-platform.com/report/graphql/GeneratePublicL
 }
 ```
 
-#### Parameters
+### Parameters
 
 | Field           | Type    | Description                      |
 | --------------- | ------- | -------------------------------- |
@@ -71,7 +71,7 @@ curl --location 'https://api.example-platform.com/report/graphql/GeneratePublicL
 
 ***
 
-#### Sample Response
+### Sample Response
 
 ```json
 {
