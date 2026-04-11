@@ -42,7 +42,7 @@ POST
 This is an example of the cURL request you will send to the endpoint:
 
 ```bash
-curl --location 'https://bolt-revamp-dev.track360.net.in/graphql' \
+curl --location 'https://api.example-platform.com/graphql' \
   -H 'Content-Type: application/json' \
   -H 'Authorization: Bearer <YOUR_JWT_TOKEN_HERE>' \
   -d '{
