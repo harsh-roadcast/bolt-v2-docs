@@ -9,7 +9,8 @@
 * [Events Push API](apis/events-push-api.md)
 * [Position & Events Pull API](apis/position-and-events-pull-api.md)
 * [Video Event Push API](apis/video-event-push-api.md)
-* [Generate Live Streaming API](apis/generate-live-streaming-api.md)
+* [Generate Public Live Streaming URLs API](apis/generate-public-live-streaming-urls-api.md)
+* [Live Streaming API](apis/live-streaming-api.md)
 * [Retrieve Device ID by IMEI API](apis/retrieve-device-id-by-imei-api.md)
 * [Fetch Device Path & Telemetry History API](apis/fetch-device-path-and-telemetry-history-api.md)
 

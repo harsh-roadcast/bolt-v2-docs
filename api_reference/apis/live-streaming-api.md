@@ -1,18 +1,12 @@
-# Generate Public Live Streaming API
+# Live Streaming API
 
-Generates temporary URLs for **live camera streaming** and **history playback** for a given device.
+Retrieves live streaming details, including server time, expiration, available channels, and the device unique ID, using a provided session token.
 
-### Authentication
+#### Authentication
 
 {% hint style="info" %}
-Note: As this is a Push API, the client must verify incoming requests from the server.
+<p align="center"><strong>Info</strong>: For this specific endpoint, authentication is handled via a <code>token</code> argument passed directly inside the GraphQL query, rather than an HTTP header.</p>
 {% endhint %}
-
-All APIs require the header:
-
-```
-X-API-KEY: your_api_key_here
-```
 
 ### Endpoint
 
@@ -20,7 +14,7 @@ X-API-KEY: your_api_key_here
 _Configured by Client_
 {% endhint %}
 
-```
+```shellscript
 POST https://api.example-platform.com/report/graphql
 ```
 
@@ -32,10 +26,9 @@ POST
 
 ### Request Headers
 
-| Header       | Value                |
-| ------------ | -------------------- |
-| Content-Type | `application/json`   |
-| X-API-KEY    | your\_api\_key\_here |
+| Header       | Value              |
+| ------------ | ------------------ |
+| Content-Type | `application/json` |
 
 ### Sample Request
 
@@ -64,10 +57,11 @@ curl --location 'https://api.example-platform.com/report/graphql' \
 
 ### Parameters
 
-| `query`         | String | Yes | The actual GraphQL query string requesting the data.                                                                                         |
-| --------------- | ------ | --- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `operationName` | String | No  | The name of the specific operation being executed (`"LiveStreamingDetails"`).                                                                |
-| `variables`     | Object | No  | A JSON object containing dynamic variables. _(Note: In your curl, this is empty `{}` because the token is hardcoded into the query string)._ |
+| Parameter       | Type   | Required | Description                                                                                                                                  |
+| --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| `query`         | String | Yes      | The actual GraphQL query string requesting the data.                                                                                         |
+| `operationName` | String | No       | The name of the specific operation being executed (`"LiveStreamingDetails"`).                                                                |
+| `variables`     | Object | No       | A JSON object containing dynamic variables. _(Note: In your curl, this is empty `{}` because the token is hardcoded into the query string)._ |
 
 ***
 
