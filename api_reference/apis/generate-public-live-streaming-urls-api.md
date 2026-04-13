@@ -66,10 +66,11 @@ curl --location 'https://api.example-platform.com/graphql' \
 
 ### Parameters
 
-| Field           | Type    | Description                      |
-| --------------- | ------- | -------------------------------- |
-| imei            | string  | Device IMEI number               |
-| validityMinutes | integer | URL validity duration in minutes |
+| **Parameter**   | **Value**                                         | **Type** | **Description**                                                                                                                                              |
+| --------------- | ------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `query`         | `"query GeneratePublicLiveStreamingUrls { ... }"` | String   | The actual GraphQL query instructing the server on what operation to run and what fields to return (`liveStreamingUrl`, `historyPlaybackUrl`, `validUntil`). |
+| `variables`     | `{}`                                              | Object   | An empty object. _(Normally, best practice is to put the `imei` and `validityMinutes` here instead of hardcoding them into the query string)._               |
+| `operationName` | `"GeneratePublicLiveStreamingUrls"`               | String   | Tells the GraphQL server which specific operation to execute from the query string.                                                                          |
 
 ### Sample Response
 
