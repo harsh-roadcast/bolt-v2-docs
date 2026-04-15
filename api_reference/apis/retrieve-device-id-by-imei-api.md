@@ -44,7 +44,7 @@ POST
 This is an example of the cURL request you will send to the endpoint:
 
 ```bash
-curl --location 'https://api.example-platform.com/fleet/graphql/DeviceQuery' \
+curl --location 'https://api.example-platform.com/rest/integrations/device-query' \
 --header 'Content-Type: application/json' \
 --header 'X-API-KEY: your_api_key_here' \
 --data '{
@@ -56,7 +56,7 @@ curl --location 'https://api.example-platform.com/fleet/graphql/DeviceQuery' \
 
 ### Example Request Body (Payload)
 
-Here is the JSON payload representing the GraphQL request:
+Here is the JSON payload representing the **Retrieve Device** request:
 
 ```json
 {

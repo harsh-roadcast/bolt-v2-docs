@@ -66,7 +66,7 @@ curl --location 'https://api.example-platform.com/rest/integrations/position-rep
 
 ### Example Request Body (Payload)
 
-Here is the JSON payload representing the GraphQL request:
+Here is the JSON payload representing the **Telemetry History** request:
 
 ```json
 {
