@@ -23,7 +23,7 @@ _Configured by Client_
 {% endhint %}
 
 ```http
-POST https://api.example-platform.com/graphql
+POST https://api.example-platform.com/rest/integrations/position-report
 ```
 
 ### HTTP Method
@@ -44,28 +44,23 @@ POST
 This is an example of the cURL request you will send to the endpoint:
 
 ```bash
-curl --location 'https://api.example-platform.com/graphql' \
+curl --location 'https://api.example-platform.com/rest/integrations/position-report' \
 --header 'Content-Type: application/json' \
 --header 'X-API-KEY: your_api_key_here' \
 --data '{
-  "query": "query ReportPosition($input: ReportQueryInput!) { ReportPosition(input: $input) { rows { deviceId speed temperature ignition distance motion latitude longitude gpsFixTimestamp deviceTimestamp serverTimestamp } extras } }",
-  "variables": {
     "input": {
-      "splitIntoDailyIntervals": false,
-      "withAddress": false,
-      "positionIgnoreFilterOutline": false,
-      "positionFilterSpeedGreaterThan": 0,
-      "positionFilterSpeedLesserThan": 0,
-      "positionFilterBySeconds": 60,
-      "fetchByDeviceTime": false,
-      "deviceIds": [
-        "c1b9e2a4-6f23-4c91-bb4a-0c8f1d9e6a52"
-      ],
-      "fromTimestamp": "2026-05-18T00:00:00.000Z",
-      "toTimestamp": "2026-05-18T04:00:00.000Z"
+        "deviceIds": ["8f8baae3-872a-4fab-8396-cf7fc17c83f7"],
+        "fromTimestamp": "2026-04-10T00:00:00Z",
+        "toTimestamp": "2026-04-10T04:59:59Z",
+        "splitIntoDailyIntervals": false,
+        "withAddress": false,
+        "eventTypeFilter": null,
+        "positionIgnoreFilterOutline": false,
+        "positionFilterSpeedGreaterThan": 0,
+        "positionFilterSpeedLesserThan": 0,
+        "positionFilterBySeconds": 20,
+        "fetchByDeviceTime": false
     }
-  },
-  "operationName": "ReportPosition"
 }'
 ```
 
@@ -75,35 +70,25 @@ Here is the JSON payload representing the GraphQL request:
 
 ```json
 {
-  "query": "query ReportPosition($input: ReportQueryInput!) { ReportPosition(input: $input) { rows { deviceId speed temperature ignition distance motion latitude longitude gpsFixTimestamp deviceTimestamp serverTimestamp } extras } }",
-  "variables": {
     "input": {
-      "splitIntoDailyIntervals": false,
-      "withAddress": false,
-      "positionIgnoreFilterOutline": false,
-      "positionFilterSpeedGreaterThan": 0,
-      "positionFilterSpeedLesserThan": 0,
-      "positionFilterBySeconds": 60,
-      "fetchByDeviceTime": false,
-      "deviceIds": [
-        "c1b9e2a4-6f23-4c91-bb4a-0c8f1d9e6a52"
-      ],
-      "fromTimestamp": "2026-05-18T00:00:00.000Z",
-      "toTimestamp": "2026-05-18T04:00:00.000Z"
+        "deviceIds": ["8f8baae3-872a-4fab-8396-cf7fc17c83f7"],
+        "fromTimestamp": "2026-04-10T00:00:00Z",
+        "toTimestamp": "2026-04-10T04:59:59Z",
+        "splitIntoDailyIntervals": false,
+        "withAddress": false,
+        "eventTypeFilter": null,
+        "positionIgnoreFilterOutline": false,
+        "positionFilterSpeedGreaterThan": 0,
+        "positionFilterSpeedLesserThan": 0,
+        "positionFilterBySeconds": 20,
+        "fetchByDeviceTime": false    
     }
-  },
-  "operationName": "ReportPosition"
 }
 ```
 
 ### List of Parameters
 
-| **Field Name**          | **DataType** | **Description**                                         |
-| ----------------------- | ------------ | ------------------------------------------------------- |
-| deviceIds               | array        | List of internal device IDs (obtained via DeviceQuery). |
-| fromTimestamp           | datetime     | Start time of the report (ISO 8601 format).             |
-| toTimestamp             | datetime     | End time of the report (ISO 8601 format).               |
-| positionFilterBySeconds | integer      | Sampling interval for positions to reduce payload size. |
+<table data-header-hidden><thead><tr><th width="263.5390625">Parameter</th><th width="140.26171875">Type</th><th width="108.31640625">Required</th><th>Description</th></tr></thead><tbody><tr><td>deviceIds</td><td><code>Array&#x3C;String></code></td><td>Yes</td><td>A list of UUIDs representing the tracking devices.</td></tr><tr><td>fromTimestamp</td><td><code>ISO 8601</code></td><td>Yes</td><td>The start date/time for the report (UTC).</td></tr><tr><td>toTimestamp</td><td><code>ISO 8601</code></td><td>Yes</td><td>The end date/time for the report (UTC).</td></tr><tr><td>splitIntoDailyIntervals</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, results are grouped by day.</td></tr><tr><td>withAddress</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, the API performs reverse geocoding to include street addresses.</td></tr><tr><td>eventTypeFilter</td><td><code>String/Null</code></td><td>No</td><td>Filter by specific event types (e.g., "Ignition On"). Use <code>null</code> for all.</td></tr><tr><td>positionIgnoreFilterOutline</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, ignores the predefined geofence or boundary filters.</td></tr><tr><td>positionFilterSpeedGreaterThan</td><td><code>Integer</code></td><td>No</td><td>Minimum speed threshold (km/h) for positions to be included.</td></tr><tr><td>positionFilterSpeedLesserThan</td><td><code>Integer</code></td><td>No</td><td>Maximum speed threshold (km/h) for positions to be included.</td></tr><tr><td>positionFilterBySeconds</td><td><code>Integer</code></td><td>No</td><td>Throttles data points (e.g., 20 means "return one point every 20 seconds").</td></tr><tr><td>fetchByDeviceTime</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, uses the timestamp recorded by the hardware rather than the server receipt time.</td></tr></tbody></table>
 
 ### Sample Response
 
@@ -111,39 +96,39 @@ Here is the expected response containing the telemetry rows:
 
 ```json
 {
-  "data": {
-    "ReportPosition": {
-      "rows": [
-        {
-          "deviceId": "c1b9e2a4-6f23-4c91-bb4a-0c8f1d9e6a52",
-          "speed": 42,
-          "temperature": 24,
-          "ignition": true,
-          "distance": 1.2,
-          "motion": true,
-          "latitude": 28.613912,
-          "longitude": 77.209021,
-          "gpsFixTimestamp": "2026-05-18T00:01:10Z",
-          "deviceTimestamp": "2026-05-18T00:01:10Z",
-          "serverTimestamp": "2026-05-18T00:01:12.480Z"
-        },
-        {
-          "deviceId": "c1b9e2a4-6f23-4c91-bb4a-0c8f1d9e6a52",
-          "speed": 38,
-          "temperature": 25,
-          "ignition": true,
-          "distance": 2.1,
-          "motion": true,
-          "latitude": 28.614201,
-          "longitude": 77.210442,
-          "gpsFixTimestamp": "2026-05-18T00:02:10Z",
-          "deviceTimestamp": "2026-05-18T00:02:10Z",
-          "serverTimestamp": "2026-05-18T00:02:11.193Z"
+"data": {
+        "ReportPosition": {
+            "extras": {},
+            "rows": [
+                {
+                    "deviceId": "8f8baae3-872a-4fab-8396-cf7fc17c83f7",
+                    "speed": 72,
+                    "temperature": 0,
+                    "ignition": true,
+                    "distance": 0,
+                    "motion": true,
+                    "latitude": 26.328853,
+                    "longitude": 72.890081,
+                    "gpsFixTimestamp": "2026-04-10T00:00:07Z",
+                    "deviceTimestamp": "2026-04-10T00:00:07Z",
+                    "serverTimestamp": "2026-04-10T00:00:07.93Z"
+                },
+                {
+                    "deviceId": "8f8baae3-872a-4fab-8396-cf7fc17c83f7",
+                    "speed": 67,
+                    "temperature": 0,
+                    "ignition": true,
+                    "distance": 0.37624318722387035,
+                    "motion": true,
+                    "latitude": 26.331816999999997,
+                    "longitude": 72.891902,
+                    "gpsFixTimestamp": "2026-04-10T00:00:27Z",
+                    "deviceTimestamp": "2026-04-10T00:00:27Z",
+                    "serverTimestamp": "2026-04-10T00:00:27.913Z"
+                }
+            }
         }
-      ],
-      "extras": {}
     }
-  }
 }
 ```
 
