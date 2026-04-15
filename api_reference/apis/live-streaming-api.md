@@ -5,8 +5,14 @@ Retrieves live streaming details, including server time, expiration, available c
 #### Authentication
 
 {% hint style="info" %}
-<p align="center"><strong>Info</strong>: For this specific endpoint, authentication is handled via a <code>token</code> argument passed directly inside the GraphQL query, rather than an HTTP header.</p>
+**Note**: As this is a Push API, the client must verify incoming requests from the server.
 {% endhint %}
+
+This API uses API Key authentication configured by the client.
+
+```http
+X-API-KEY: your_api_key_here
+```
 
 ### Endpoint
 
@@ -15,7 +21,7 @@ _Configured by Client_
 {% endhint %}
 
 ```shellscript
-POST https://api.example-platform.com/report/graphql
+POST https://api.example-platform.com/rest/integrations/live-streaming-details
 ```
 
 ### HTTP Method
@@ -26,22 +32,21 @@ POST
 
 ### Request Headers
 
-| Header       | Value              |
-| ------------ | ------------------ |
-| Content-Type | `application/json` |
+| Header       | Value                |
+| ------------ | -------------------- |
+| Content-Type | `application/json`   |
+| X-API-KEY    | \<your api key here> |
 
 ### Sample Request
 
 This is an example of the cURL request you will send to the endpoint:
 
 ```bash
-curl --location 'https://api.example-platform.com/report/graphql' \
+curl --location 'https://api.example-platform.com/rest/integrations/live-streaming-details' \
 -H 'Content-Type: application/json' \
-  -H 'Accept: application/json' \
+-H 'X-API-KEY: API_KEY' \
   -d '{
-  "query": "query LiveStreamingDetails {\n  LiveStreamingDetails(token: \"22a41b6693b74129a27569564b38e319\") {\n    serverTime\n    validUntil\n    channels\n    uniqueId\n  }\n}",
-  "variables": {},
-  "operationName": "LiveStreamingDetails"
+    "token": "<token>"
 }'
 ```
 
@@ -49,19 +54,15 @@ curl --location 'https://api.example-platform.com/report/graphql' \
 
 ```json
 {
-  "query": "query LiveStreamingDetails {\n  LiveStreamingDetails(token: \"22a41b6693b74129a27569564b38e319\") {\n    serverTime\n    validUntil\n    channels\n    uniqueId\n  }\n}",
-  "variables": {},
-  "operationName": "LiveStreamingDetails"
+    "token": "<token>"
 }
 ```
 
 ### Parameters
 
-| Parameter       | Type   | Required | Description                                                                                                                                  |
-| --------------- | ------ | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| `query`         | String | Yes      | The actual GraphQL query string requesting the data.                                                                                         |
-| `operationName` | String | No       | The name of the specific operation being executed (`"LiveStreamingDetails"`).                                                                |
-| `variables`     | Object | No       | A JSON object containing dynamic variables. _(Note: In your curl, this is empty `{}` because the token is hardcoded into the query string)._ |
+| Parameter | Type            | Required | Description                                                    |
+| --------- | --------------- | -------- | -------------------------------------------------------------- |
+| token     | `String` (UUID) | Yes      | The unique session token generated for a specific live stream. |
 
 ***
 
@@ -69,17 +70,17 @@ curl --location 'https://api.example-platform.com/report/graphql' \
 
 ```json
 {
-    "data": {
-        "LiveStreamingDetails": {
-            "serverTime": "2026-04-11T08:12:00.98480483Z",
-            "validUntil": "2026-04-11T08:21:21.599619Z",
-            "channels": [
-                1,
-                2
-            ],
-            "uniqueId": "522076851100"
-        }
-    }
+  "data": {
+    "LiveStreamingDetails": {
+      "serverTime": "2026-04-15T09:20:58.884362293Z",
+      "validUntil": "2026-04-16T04:09:18.373Z",
+      "channels": [
+        1,
+        2
+      ],
+      "uniqueId": "522076851100"
+    }
+  }
 }
 ```
 

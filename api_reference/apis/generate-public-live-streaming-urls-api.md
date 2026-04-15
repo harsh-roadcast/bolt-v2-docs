@@ -11,7 +11,7 @@ Note: As this is a Push API, the client must verify incoming requests from the s
 All APIs require the header:
 
 ```shellscript
-Authorization: Bearer <token> (Client configured)
+X-API-KEY: your_api_key_here
 ```
 
 ### Endpoint
