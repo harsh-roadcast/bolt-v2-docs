@@ -23,7 +23,7 @@ _Configured by Client_
 {% endhint %}
 
 ```http
-POST https://api.example-platform.com/fleet/graphql/DeviceQuery
+POST https://api.example-platform.com/rest/integrations/device-query
 ```
 
 ### HTTP Method
@@ -48,13 +48,9 @@ curl --location 'https://api.example-platform.com/fleet/graphql/DeviceQuery' \
 --header 'Content-Type: application/json' \
 --header 'X-API-KEY: your_api_key_here' \
 --data '{
-  "query": "query DeviceQuery($where: DeviceWhereInput) { DeviceQuery(where: $where) { edges { node { id imei name } } } }",
-  "variables": {
     "where": {
-      "imei": "867451039284561"
+        "imei": "<Your device IMEI>"
     }
-  },
-  "operationName": "DeviceQuery"
 }'
 ```
 
@@ -64,13 +60,9 @@ Here is the JSON payload representing the GraphQL request:
 
 ```json
 {
-  "query": "query DeviceQuery($where: DeviceWhereInput) { DeviceQuery(where: $where) { edges { node { id imei name } } } }",
-  "variables": {
     "where": {
-      "imei": "867451039284561"
+        "imei": "<Your device IMEI>"
     }
-  },
-  "operationName": "DeviceQuery"
 }
 ```
 
@@ -86,19 +78,18 @@ Here is the expected response containing the internal Device ID:
 
 ```json
 {
-  "data": {
-    "DeviceQuery": {
-      "edges": [
-        {
-          "node": {
-            "id": "c1b9e2a4-6f23-4c91-bb4a-0c8f1d9e6a52",
-            "imei": "867451039284561",
-            "name": "Vehicle-Camera-Unit-12"
-          }
+    "data": {
+        "DeviceQuery": {
+            "edges": [
+                {
+                    "node": {
+                        "id": "0199ec89-36ec-7c36-b291-98da56704e25",
+                        "imei": "<Your device IMEI>"
+                    }
+                }
+            ]
         }
-      ]
     }
-  }
 }
 ```
 

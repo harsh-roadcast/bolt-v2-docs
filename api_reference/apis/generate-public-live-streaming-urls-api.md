@@ -21,7 +21,7 @@ _Configured by Client_
 {% endhint %}
 
 ```shellscript
-POST https://api.example-platform.com/report/graphql
+POST https://api.example-platform.com/rest/integrations/generate-public-live-streaming-urls
 ```
 
 ### HTTP Method
@@ -32,23 +32,22 @@ POST
 
 ### Request Headers
 
-| Header        | Value                                |
-| ------------- | ------------------------------------ |
-| Content-Type  | `application/json`                   |
-| Authorization | Bearer `<token>` (Client configured) |
+| Header       | Value                                |
+| ------------ | ------------------------------------ |
+| Content-Type | `application/json`                   |
+| X-API-KEY    | Bearer `<token>` (Client configured) |
 
 ### Sample Request
 
 This is an example of the cURL request you will send to the endpoint:
 
 ```bash
-curl --location 'https://api.example-platform.com/graphql' \
+curl --location 'https://api.example-platform.com/rest/integrations/generate-public-live-streaming-urls' \
   -H 'Content-Type: application/json' \
-  -H 'Authorization: Bearer <YOUR_JWT_TOKEN_HERE>' \
+  -H 'X-API-KEY: <Your API_KEY Here>' \
   -d '{
-  "query": "query GeneratePublicLiveStreamingUrls { GeneratePublicLiveStreamingUrls(imei: \"867451039284561\", validityMinutes: 60) { liveStreamingUrl historyPlaybackUrl validUntil } }",
-  "variables": {},
-  "operationName": "GeneratePublicLiveStreamingUrls"
+    "imei": "<your device IMEI id>",
+    "validityMinutes": 60
 }'
 ```
 
@@ -56,9 +55,8 @@ curl --location 'https://api.example-platform.com/graphql' \
 
 ```json
 {
-  "query": "query GeneratePublicLiveStreamingUrls { GeneratePublicLiveStreamingUrls(imei: \"867451039284561\", validityMinutes: 60) { liveStreamingUrl historyPlaybackUrl validUntil } }",
-  "variables": {},
-  "operationName": "GeneratePublicLiveStreamingUrls"
+    "imei": "<your device IMEI id>",
+    "validityMinutes": 60
 }
 ```
 
@@ -66,23 +64,21 @@ curl --location 'https://api.example-platform.com/graphql' \
 
 ### Parameters
 
-| **Parameter**   | **Value**                                         | **Type** | **Description**                                                                                                                                              |
-| --------------- | ------------------------------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `query`         | `"query GeneratePublicLiveStreamingUrls { ... }"` | String   | The actual GraphQL query instructing the server on what operation to run and what fields to return (`liveStreamingUrl`, `historyPlaybackUrl`, `validUntil`). |
-| `variables`     | `{}`                                              | Object   | An empty object. _(Normally, best practice is to put the `imei` and `validityMinutes` here instead of hardcoding them into the query string)._               |
-| `operationName` | `"GeneratePublicLiveStreamingUrls"`               | String   | Tells the GraphQL server which specific operation to execute from the query string.                                                                          |
+| imei            | `String`  | Yes | The unique 15-digit International Mobile Equipment Identity number of the device.   |
+| --------------- | --------- | --- | ----------------------------------------------------------------------------------- |
+| validityMinutes | `Integer` | Yes | The duration (in minutes) for which the generated streaming URL will remain active. |
 
 ### Sample Response
 
 ```json
 {
-  "data": {
-    "GeneratePublicLiveStreamingUrls": {
-      "liveStreamingUrl": "https://bolt-test.web.app/assets/protocols/cvpro/index.html?t=22a41b6693b74129a27569564b38e319&serverUrl=https://be-dev.track360.net.in/report/graphql",
-      "historyPlaybackUrl": "https://bolt-test.web.app/assets/protocols/cvpro/index_timeline.html?t=22a41b6693b74129a27569564b38e319&serverUrl=https://be-dev.track360.net.in/report/graphql",
-      "validUntil": "2026-04-11T08:21:21.600627735Z"
-    }
-  }
+    "data": {
+        "GeneratePublicLiveStreamingUrls": {
+            "liveStreamingUrl": "https://live-streaming-v2.web.app/protocols/cvpro/index.html?t=143dfa933a9c49b6ba2f64bb182bd005&serverUrl=https://be-dev.track360.net.in/report/graphql",
+            "historyPlaybackUrl": "https://live-streaming-v2.web.app/protocols/cvpro/index_timeline.html?t=143dfa933a9c49b6ba2f64bb182bd005&serverUrl=https://be-dev.track360.net.in/report/graphql",
+            "validUntil": "2026-04-15T08:49:45.06798171Z"
+        }
+    }
 }
 ```
 
