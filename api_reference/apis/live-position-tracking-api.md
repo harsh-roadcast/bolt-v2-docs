@@ -46,7 +46,8 @@ curl --location 'https://api.example-platform.com/rest/integrations/live-positio
 --data '{
     "onlyLastUpdateGte": "2026-04-13T00:00:00Z",
     "considerIdleAfterSeconds": 600,
-    "considerInactiveAfterSeconds": 1800
+    "considerInactiveAfterSeconds": 1800,
+    "onlyDeviceIds": ["00000000-0000-0000-0000-000000000000"]
 }'
 ```
 
@@ -58,17 +59,19 @@ Here is the JSON payload representing the **Live Position Tracking** request:
 {
     "onlyLastUpdateGte": "2026-04-13T00:00:00Z",
     "considerIdleAfterSeconds": 600,
-    "considerInactiveAfterSeconds": 1800
+    "considerInactiveAfterSeconds": 1800,
+    "onlyDeviceIds": ["00000000-0000-0000-0000-000000000000"]
 }
 ```
 
 ### List of Parameters
 
-| **Field Name**               | **DataType** | **Description**                                                                                                           |
-| ---------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| onlyLastUpdateGte            | string       | Unique IMEI identifier of the device you are querying.                                                                    |
-| considerIdleAfterSeconds     | integer      | The threshold duration in seconds after which a device is classified as "idle" if it has not moved.                       |
-| considerInactiveAfterSeconds | integer      | The threshold duration in seconds after which a device is classified as "inactive" if no communication has been received. |
+| **Field Name**               | **DataType**   | **Description**                                                                                                                                                                |
+| ---------------------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| onlyLastUpdateGte            | string         | Unique IMEI identifier of the device you are querying.                                                                                                                         |
+| considerIdleAfterSeconds     | integer        | The threshold duration in seconds after which a device is classified as "idle" if it has not moved.                                                                            |
+| considerInactiveAfterSeconds | integer        | The threshold duration in seconds after which a device is classified as "inactive" if no communication has been received.                                                      |
+| onlyDeviceIds                | array\[string] | Optional list of device identifiers used to filter the response to specific devices.Retrieved through [**Retrieve Device ID by IMEI API.**](retrieve-device-id-by-imei-api.md) |
 
 ### Sample Response
 
