@@ -40,9 +40,9 @@ POST
 This is an example of the cURL request you will send to the endpoint:
 
 ```bash
-curl --location 'https://be-dev.track360.net.in/rest/integrations/live-position-tracking' \
+curl --location 'https://api.example-platform.com/rest/integrations/live-position-tracking' \
 --header 'Content-Type: application/json' \
---header 'X-API-KEY: kartik_api_key' \
+--header 'X-API-KEY: your_api_key_here' \
 --data '{
     "onlyLastUpdateGte": "2026-04-13T00:00:00Z",
     "considerIdleAfterSeconds": 600,
