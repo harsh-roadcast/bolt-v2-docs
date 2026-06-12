@@ -54,7 +54,6 @@ curl --location 'https://api.example-platform.com/rest/integrations/position-rep
         "toTimestamp": "2026-04-10T04:59:59Z",
         "splitIntoDailyIntervals": false,
         "withAddress": false,
-        "eventTypeFilter": null,
         "positionIgnoreFilterOutline": false,
         "positionFilterSpeedGreaterThan": 0,
         "positionFilterSpeedLesserThan": 0,
@@ -76,7 +75,6 @@ Here is the JSON payload representing the **Telemetry History** request:
         "toTimestamp": "2026-04-10T04:59:59Z",
         "splitIntoDailyIntervals": false,
         "withAddress": false,
-        "eventTypeFilter": null,
         "positionIgnoreFilterOutline": false,
         "positionFilterSpeedGreaterThan": 0,
         "positionFilterSpeedLesserThan": 0,
@@ -88,7 +86,7 @@ Here is the JSON payload representing the **Telemetry History** request:
 
 ### List of Parameters
 
-<table data-header-hidden><thead><tr><th width="263.5390625">Parameter</th><th width="140.26171875">Type</th><th width="108.31640625">Required</th><th>Description</th></tr></thead><tbody><tr><td>deviceIds</td><td><code>Array&#x3C;String></code></td><td>Yes</td><td>A list of UUIDs representing the tracking devices.</td></tr><tr><td>fromTimestamp</td><td><code>ISO 8601</code></td><td>Yes</td><td>The start date/time for the report (UTC).</td></tr><tr><td>toTimestamp</td><td><code>ISO 8601</code></td><td>Yes</td><td>The end date/time for the report (UTC).</td></tr><tr><td>splitIntoDailyIntervals</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, results are grouped by day.</td></tr><tr><td>withAddress</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, the API performs reverse geocoding to include street addresses.</td></tr><tr><td>eventTypeFilter</td><td><code>String/Null</code></td><td>No</td><td>Filter by specific event types (e.g., "Ignition On"). Use <code>null</code> for all.</td></tr><tr><td>positionIgnoreFilterOutline</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, ignores the predefined geofence or boundary filters.</td></tr><tr><td>positionFilterSpeedGreaterThan</td><td><code>Integer</code></td><td>No</td><td>Minimum speed threshold (km/h) for positions to be included.</td></tr><tr><td>positionFilterSpeedLesserThan</td><td><code>Integer</code></td><td>No</td><td>Maximum speed threshold (km/h) for positions to be included.</td></tr><tr><td>positionFilterBySeconds</td><td><code>Integer</code></td><td>No</td><td>Throttles data points (e.g., 20 means "return one point every 20 seconds").</td></tr><tr><td>fetchByDeviceTime</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, uses the timestamp recorded by the hardware rather than the server receipt time.</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="263.5390625">Parameter</th><th width="140.26171875">Type</th><th width="108.31640625">Required</th><th>Description</th></tr></thead><tbody><tr><td>deviceIds</td><td><code>Array&#x3C;String></code></td><td>Yes</td><td>A list of UUIDs representing the tracking devices.</td></tr><tr><td>fromTimestamp</td><td><code>ISO 8601</code></td><td>Yes</td><td>The start date/time for the report (UTC).</td></tr><tr><td>toTimestamp</td><td><code>ISO 8601</code></td><td>Yes</td><td>The end date/time for the report (UTC).</td></tr><tr><td>splitIntoDailyIntervals</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, results are grouped by day.</td></tr><tr><td>withAddress</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, the API performs reverse geocoding to include street addresses.</td></tr><tr><td>positionIgnoreFilterOutline</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, ignores the predefined geofence or boundary filters.</td></tr><tr><td>positionFilterSpeedGreaterThan</td><td><code>Integer</code></td><td>No</td><td>Minimum speed threshold (km/h) for positions to be included.</td></tr><tr><td>positionFilterSpeedLesserThan</td><td><code>Integer</code></td><td>No</td><td>Maximum speed threshold (km/h) for positions to be included.</td></tr><tr><td>positionFilterBySeconds</td><td><code>Integer</code></td><td>No</td><td>Throttles data points (e.g., 20 means "return one point every 20 seconds").</td></tr><tr><td>fetchByDeviceTime</td><td><code>Boolean</code></td><td>No</td><td>If <code>true</code>, uses the timestamp recorded by the hardware rather than the server receipt time.</td></tr></tbody></table>
 
 ### Sample Response
 
