@@ -40,11 +40,11 @@ POST
 
 In the input parameter of request these optional parameter can be passed to filter the incoming positions on the provided basis.
 
-| Parameter   | Type               | Description                                 |
-| ----------- | ------------------ | ------------------------------------------- |
-| deviceIds   | `uuid`(Optional)   | Filter devices on the basis if device IDs   |
-| deviceImeis | `String`(Optional) | Filter devices on the basis of IMEIs        |
-| deviceNames | `String`(Optional) | Filter devices on the basis on device names |
+| Parameter                                      | Type               | Description                                 |
+| ---------------------------------------------- | ------------------ | ------------------------------------------- |
+| [deviceIds](retrieve-device-id-by-imei-api.md) | `uuid`(Optional)   | Filter devices on the basis if device IDs   |
+| deviceImeis                                    | `String`(Optional) | Filter devices on the basis of IMEIs        |
+| deviceNames                                    | `String`(Optional) | Filter devices on the basis on device names |
 
 ### Sample cURL
 
