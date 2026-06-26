@@ -34,12 +34,22 @@ POST
 
 ### Request Parameters
 
-<table><thead><tr><th width="180.45703125">Parameter</th><th width="171.26953125">Type</th><th>Description</th></tr></thead><tbody><tr><td>input</td><td>object</td><td>An empty JSON object <code>{}</code> triggering the retrieval of all current device positions.</td></tr></tbody></table>
+<table><thead><tr><th width="180.45703125">Parameter</th><th width="171.26953125">Type</th><th>Description</th></tr></thead><tbody><tr><td>input</td><td>object</td><td>An empty JSON object <code>{}</code> triggering the retrieval of all current device positions under your organisation.</td></tr></tbody></table>
+
+### Input Parameters
+
+In the input parameter of request these optional parameter can be passed to filter the incoming positions on the provided basis.
+
+| Parameter   | Type               | Description                                 |
+| ----------- | ------------------ | ------------------------------------------- |
+| deviceIds   | `uuid`(Optional)   | Filter devices on the basis if device IDs   |
+| deviceImeis | `String`(Optional) | Filter devices on the basis of IMEIs        |
+| deviceNames | `String`(Optional) | Filter devices on the basis on device names |
 
 ### Sample cURL
 
 ```bash
-curl --location 'https://test-track.roadcast.net/api/v2/rest/integrations/pull-positions-api \
+curl --location 'https://example.net/api/v2/rest/integrations/pull-positions-api \
   -H "Content-Type: application/json" \
   -H "X-API-KEY: dp_world_test" \
   -d '{"input":{}}'
