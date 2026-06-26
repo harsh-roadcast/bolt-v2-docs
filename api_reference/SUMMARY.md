@@ -10,7 +10,6 @@
 * [Position & Events Pull API (V1)](apis/position-and-events-pull-api-v1.md)
 * [Position Pull API (V2)](apis/position-pull-api-v2.md)
 * [Events Pull API (V2)](apis/events-pull-api-v2.md)
-* [Page 2](apis/page-2.md)
 * [Video Event Push API](apis/video-event-push-api.md)
 * [Generate Public Live Streaming URLs API](apis/generate-public-live-streaming-urls-api.md)
 * [Live Streaming API](apis/live-streaming-api.md)
