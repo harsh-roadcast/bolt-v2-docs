@@ -1,0 +1,156 @@
+# Events Pull API (V2)
+
+### Overview
+
+This API documentation details the endpoints used for retrieving integration data, specifically vehicle/device events and real-time position tracking.
+
+#### Example Header
+
+```bash
+X-API-KEY: API_KEY_HERE
+```
+
+_Replace_ `API_KEY_HERE` _with your valid API key._
+
+### Endpoint
+
+```bash
+GET https://client-domain.com/api/v2/rest/integrations/pull-events-api
+```
+
+### HTTP Method
+
+```
+POST 
+```
+
+### Request Headers
+
+<table><thead><tr><th width="258.9921875">Header</th><th>Value</th></tr></thead><tbody><tr><td>Content-Type</td><td> application/json </td></tr><tr><td>X-API-KEY</td><td><code>&#x3C;your_api_key></code></td></tr></tbody></table>
+
+### Request Parameters
+
+The request payload must contain an `input` object defining the time range.
+
+<table><thead><tr><th width="180.45703125">Parameter</th><th width="171.26953125">Type</th><th>Description</th></tr></thead><tbody><tr><td>fromTimestamp</td><td>datetime (ISO 8601)</td><td>The start time for the event query (e.g., <code>2026-06-25T00:00:00Z</code>).</td></tr><tr><td>toTimestamp</td><td>datetime (ISO 8601)</td><td>The end time for the event query (e.g., <code>2026-06-25T01:59:59Z</code>).</td></tr></tbody></table>
+
+### Sample cURL
+
+```bash
+curl --location 'https://test-track.roadcast.net/api/v2/rest/integrations/pull-events-api \
+  -H "Content-Type: application/json" \
+  -H "X-API-KEY: dp_world_test" \
+  -d '{"input":{"fromTimestamp":"2026-06-25T00:00:00Z","toTimestamp":"2026-06-25T01:59:59Z"}}'
+```
+
+### Response Structure
+
+```json
+{
+"data": [...],
+"error": [...]
+}
+```
+
+### List of Device Details
+
+<table><thead><tr><th width="213.55078125">Field</th><th width="184.58203125">Type</th><th>Description</th></tr></thead><tbody><tr><td>ac</td><td>boolean</td><td>AC status (on/off)</td></tr><tr><td>address</td><td>string</td><td>Geocoded address of the device</td></tr><tr><td>alarm</td><td>string</td><td>Alarm status (if any)</td></tr><tr><td>batteryLevel</td><td>float</td><td>Device battery level (%)</td></tr><tr><td>course</td><td>float</td><td>Direction in degrees</td></tr><tr><td>daily_distance</td><td>float</td><td>Distance traveled today (meters)</td></tr><tr><td>deviceFixTime</td><td>datetime</td><td>GPS fix timestamp</td></tr><tr><td>deviceId</td><td>string</td><td>Internal device ID</td></tr><tr><td>deviceImei</td><td>string</td><td>IMEI of the tracking device</td></tr><tr><td>deviceTime</td><td>datetime</td><td>Time recorded by device</td></tr><tr><td>external_power</td><td>any</td><td>External power supply status</td></tr><tr><td>fuel</td><td>any</td><td>Fuel level if supported</td></tr><tr><td>ignition</td><td>boolean</td><td>Ignition status</td></tr><tr><td>lastUpdate</td><td>datetime</td><td>Last update time received</td></tr><tr><td>latitude</td><td>float</td><td>Latitude coordinate</td></tr><tr><td>longitude</td><td>float</td><td>Longitude coordinate</td></tr><tr><td>name</td><td>string</td><td>Vehicle number or label</td></tr><tr><td>phone</td><td>string</td><td>Phone number linked (if any)</td></tr><tr><td>region</td><td>string</td><td>Regional tag (if any)</td></tr><tr><td>soc</td><td>string</td><td>State of charge (if applicable)</td></tr><tr><td>speed</td><td>float</td><td>Current speed (km/h)</td></tr><tr><td>status</td><td>any</td><td>Device or trip status</td></tr><tr><td>type</td><td>any</td><td>Device type</td></tr><tr><td>valid</td><td>int</td><td>1 for valid GPS fix, 0 otherwise</td></tr></tbody></table>
+
+### Alerts
+
+**Vehicle & Movement Alerts**
+
+<table><thead><tr><th width="370.80859375">Alert</th><th>Description</th></tr></thead><tbody><tr><td>accident</td><td>Crash detected based on impact sensor data.</td></tr><tr><td>movement</td><td>Vehicle started moving.</td></tr><tr><td>overspeed</td><td>Vehicle exceeded configured speed limit.</td></tr><tr><td>tow</td><td>Vehicle is being towed (ignition off but movement detected).</td></tr><tr><td>vibration</td><td>Vibration detected while parked.</td></tr><tr><td>shock</td><td>Strong impact detected.</td></tr><tr><td>hardAcceleration</td><td>Sudden aggressive acceleration.</td></tr><tr><td>hardBraking</td><td>Sudden harsh braking.</td></tr><tr><td>hardCornering</td><td>Sharp turn at high speed.</td></tr><tr><td>laneChange</td><td>Sudden lane change detected.</td></tr><tr><td>laneDepartureAlam</td><td>Vehicle drifting out of lane.</td></tr><tr><td>dangerousDriving</td><td>Risky driving behavior detected.</td></tr><tr><td>forwardCollisionAlarm</td><td>Risk of front collision detected.</td></tr><tr><td>pedestrianCollisionAlarm</td><td>Risk of hitting pedestrian detected.</td></tr><tr><td>vehicleDistanceTooCloseToFrontVehicleAlarm</td><td>Unsafe following distance.</td></tr></tbody></table>
+
+**Power & Battery Alerts**
+
+| Alert                  | Description                      |
+| ---------------------- | -------------------------------- |
+| batteryChargingStarted | Device battery started charging. |
+| batteryChargingStopped | Device battery stopped charging. |
+| fullyCharged           | Battery fully charged.           |
+| lowBattery             | Device battery level low.        |
+| lowPower               | External power voltage is low.   |
+| powerCut               | External power disconnected.     |
+| powerRestored          | External power restored.         |
+| powerOn                | Device powered ON.               |
+| powerOff               | Device powered OFF.              |
+
+**Security & Tampering Alerts**
+
+| Alert               | Description                          |
+| ------------------- | ------------------------------------ |
+| tampering           | Device tampering detected.           |
+| steelStringCut      | Tamper wire/cable cut.               |
+| gpsAntennaCut       | GPS antenna disconnected or damaged. |
+| jamming             | GPS/GSM signal jamming detected.     |
+| removing            | Device removal attempt detected.     |
+| motorLock           | Engine/motor remotely locked.        |
+| motorUnlock         | Engine/motor unlocked.               |
+| passwordUnlock      | Unlock using password.               |
+| illegalRfid         | Unauthorized RFID used.              |
+| swipeIllegalCard    | Unauthorized card swiped.            |
+| swipeAuthorizedCard | Authorized card swiped.              |
+
+#### Vehicle State Alerts
+
+| Alert Code    | Description                            |
+| ------------- | -------------------------------------- |
+| door          | Door opened/closed.                    |
+| seatBeltEvent | Seatbelt fastened/unfastened event.    |
+| backCap       | Rear cap/cover open or close.          |
+| bacCapOpen    | Rear cap opened.                       |
+| geofence      | Geofence event triggered.              |
+| geofenceEnter | Vehicle entered defined geofence area. |
+| geofenceExit  | Vehicle exited defined geofence area.  |
+
+**Driver Monitoring Alerts (MDVR / AI Camera Based)**
+
+| Alert Code          | Description                              |
+| ------------------- | ---------------------------------------- |
+| fatigueDriving      | Driver drowsiness detected.              |
+| distraction         | Driver distracted (not looking at road). |
+| phoneCalling        | Driver using phone while driving.        |
+| smoking             | Driver smoking detected.                 |
+| driverAbnormalAlarm | Abnormal driver behavior detected.       |
+| fallDown            | Driver/person fell down (AI detection).  |
+| sos                 | Emergency panic button pressed.          |
+
+**Device / Communication Alerts**
+
+| Alert Code  | Description                                        |
+| ----------- | -------------------------------------------------- |
+| bleRead     | Bluetooth Low Energy device data read.             |
+| rfidRead    | RFID tag read successfully.                        |
+| TMDEV\_Read | External device (temperature/fuel/etc.) data read. |
+| general     | General-purpose alert (custom event).              |
+
+### List of Device Errors
+
+<table><thead><tr><th width="214.1328125">Field</th><th width="187.703125">Type</th><th>Description</th></tr></thead><tbody><tr><td>device_id</td><td>string</td><td>ID of the device (if available)</td></tr><tr><td>expired</td><td>string</td><td>Subscription expiry date</td></tr><tr><td>imei</td><td>string</td><td>IMEI of the device</td></tr><tr><td>message</td><td>string</td><td>Error description</td></tr></tbody></table>
+
+### Example Error Message
+
+```
+{
+"device_id": null,
+"expired": "",
+"imei": null,
+"message": "This Device is Inactive - {
+'prevOdometer': '14959',
+'overSpeeds': '0',
+'harshBrakings': '0',
+'harshAccelerations': '0',
+'harshCornerings': '0',
+'subscription_expiry_date': '2022-04-08',
+'user_ids': [1, 2, 9040, 29793, 41729, 41741, 51627, 51629, 63178],
+'daily_distance': -14959.0
+}"
+}
+```
+
+{% hint style="info" %}
+* Fields like fuel, external\_power, and soc might be null based on device capability.
+* The API does not require any body content; authentication and URL parameters are\
+  sufficient.
+{% endhint %}
