@@ -16,6 +16,8 @@
 * [Retrieve Device ID by IMEI API](apis/retrieve-device-id-by-imei-api.md)
 * [Live Position Tracking API](apis/live-position-tracking-api.md)
 * [Fetch Device Path & Telemetry History API](apis/fetch-device-path-and-telemetry-history-api.md)
+* [Device Action Log (Mobilize / Immobilize)](apis/device-action-log-mobilize-immobilize.md)
+* [Device Action Log Query API](apis/device-action-log-query-api.md)
 
 ## Appendix
 
