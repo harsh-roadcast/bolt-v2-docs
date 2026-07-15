@@ -191,7 +191,7 @@ Anyone opening Reports for the first time. No prior configuration knowledge assu
 
 ### The five-minute path
 
-![Report Center on web](../.gitbook/assets/web_navigation.png)
+<figure><img src="../.gitbook/assets/web_navigation.png" alt=""><figcaption></figcaption></figure>
 
 *Open Report Center from the left navigation, then choose or generate a report.*
 
@@ -255,69 +255,16 @@ Eight report types. Each one answers a different kind of question. Here is all o
 
 ### Every report type
 
-##### [Summary](#summary-report)
-
-Level 1
-
-**How did the fleet perform overall?**
-
-Rolled-up totals per vehicle or per day - distance, running time, idle time, event counts.
-
-##### [Incident Summary](#incident-summary-report)
-
-Companion to Summary
-
-**How many incidents, and where?**
-
-Incident totals sitting alongside summary figures.
-
-##### [Trip](#trip-report)
-
-Level 2
-
-**What journeys did each vehicle complete?**
-
-One row per journey - start, end, distance, duration, stops, idle.
-
-##### [Stop and Idle](#stop-and-idle-report)
-
-Companion to Trip
-
-**Where is time being lost?**
-
-Every stop and idle spell with location and duration.
-
-##### [Events](#events-report)
-
-Level 3
-
-**What driving behaviour was flagged?**
-
-Harsh braking, overspeed, harsh acceleration and other alerts.
-
-##### [Event IVMS](#event-ivms-report)
-
-Level 3
-
-**What do the in-vehicle monitoring events show?**
-
-IVMS-standard event records at the same level as Events.
-
-##### [Positions](#positions-report)
-
-Level 4
-
-**Exactly where was the vehicle, second by second?**
-
-Raw GPS position records - the most detailed level available.
-
-##### [MVI](#mvi-report)
-
-Standalone
-
-**What does the vehicle inspection record say?**
-
-Motor vehicle inspection data. Always generated on its own.
+| Report | Level | Description |
+|--------|-------|-------------|
+| [Summary](#summary-report) | 1 | **How did the fleet perform overall?** Rolled-up totals per vehicle or per day - distance, running time, idle time, event counts. |
+| [Incident Summary](#incident-summary-report) | Companion to Summary | **How many incidents, and where?** Incident totals sitting alongside summary figures. |
+| [Trip](#trip-report) | 2 | **What journeys did each vehicle complete?** One row per journey - start, end, distance, duration, stops, idle. |
+| [Stop and Idle](#stop-and-idle-report) | Companion to Trip | **Where is time being lost?** Every stop and idle spell with location and duration. |
+| [Events](#events-report) | 3 | **What driving behaviour was flagged?** Harsh braking, overspeed, harsh acceleration and other alerts. |
+| [Event IVMS](#event-ivms-report) | 3 | **What do the in-vehicle monitoring events show?** IVMS-standard event records at the same level as Events. |
+| [Positions](#positions-report) | 4 | **Exactly where was the vehicle, second by second?** Raw GPS position records - the most detailed level available. |
+| [MVI](#mvi-report) | Standalone | **What does the vehicle inspection record say?** Motor vehicle inspection data. Always generated on its own. |
 
 > **Note:** Only Trip has a full page written so far - it is the worked example for the report-page template. The remaining seven follow the identical structure and are queued for publication.
 
@@ -1221,7 +1168,7 @@ When you select more than one base report, BOLT uses the highest selected level 
 
 ### Combinations that work
 
-![Multiple base reports in the custom report builder](../.gitbook/assets/web_multiple_base_reports.png)
+<figure><img src="../.gitbook/assets/web_multiple_base_reports.png" alt=""><figcaption></figcaption></figure>
 
 *A custom report using more than one compatible base report.*
 
@@ -1282,7 +1229,7 @@ Ten steps, grouped into four phases. You can always go back a step - nothing is 
 
 ### Step 1 - Choose your base reports
 
-![Start of the custom report builder](../.gitbook/assets/web_builder_start.png)
+<figure><img src="../.gitbook/assets/web_builder_start.png" alt=""><figcaption></figcaption></figure>
 
 *Start the custom report by selecting a base report and moving columns into the selected list.*
 
@@ -1308,7 +1255,7 @@ Ten steps, grouped into four phases. You can always go back a step - nothing is 
 
 ### Step 4 - Pick your columns
 
-![Columns from multiple base reports](../.gitbook/assets/web_multiple_base_reports.png)
+<figure><img src="../.gitbook/assets/web_multiple_base_reports.png" alt=""><figcaption></figcaption></figure>
 
 *When compatible base reports are combined, their available columns can be selected in one builder.*
 
@@ -1461,7 +1408,7 @@ Grouping decides how rows cluster. Aggregation decides what the numbers at the b
 
 ### Grouping
 
-![Row grouping configuration](../.gitbook/assets/web_row_grouping.png)
+<figure><img src="../.gitbook/assets/web_row_grouping.png" alt=""><figcaption></figcaption></figure>
 
 *Configure row grouping to organize records by a selected dimension.*
 
@@ -1478,7 +1425,7 @@ Without grouping you get a flat list, newest first. With grouping, related rows 
 
 ### Aggregation
 
-![Column grouping configuration](../.gitbook/assets/web_column_grouping.png)
+<figure><img src="../.gitbook/assets/web_column_grouping.png" alt=""><figcaption></figcaption></figure>
 
 *Configure column grouping when the comparison needs values arranged across columns.*
 
@@ -1544,7 +1491,7 @@ What happens after you press Generate, what each status means, and what to do ab
 
 ### How generation works
 
-![Generated report result](../.gitbook/assets/web_generated_report.png)
+<figure><img src="../.gitbook/assets/web_generated_report.png" alt=""><figcaption></figcaption></figure>
 
 *A generated report with status, filters, download actions, and the resulting data table.*
 
@@ -1664,7 +1611,7 @@ A schedule runs a saved report or template automatically and delivers the result
 
 ### Setting one up
 
-![Create a report schedule](../.gitbook/assets/web_add_schedule.png)
+<figure><img src="../.gitbook/assets/web_add_schedule.png" alt=""><figcaption></figcaption></figure>
 
 *Choose the organization, recipients, frequency, delivery time, and file format before saving the schedule.*
 
@@ -1686,7 +1633,7 @@ A schedule runs a saved report or template automatically and delivers the result
 
 ### Managing a schedule
 
-![View report schedules](../.gitbook/assets/web_view_schedules.png)
+<figure><img src="../.gitbook/assets/web_view_schedules.png" alt=""><figcaption></figcaption></figure>
 
 *Review the schedules attached to a report template and their next run time.*
 
@@ -1731,7 +1678,7 @@ Mobile is built for running and reading reports, not building them. That is a de
 
 ### What mobile does
 
-![Reports entry point on mobile](../.gitbook/assets/mobile_reports_entry.png)
+<figure><img src="../.gitbook/assets/mobile_reports_entry.png" alt=""><figcaption></figcaption></figure>
 
 *Open Reports from the Analytics section of the mobile menu.*
 
