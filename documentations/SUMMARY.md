@@ -32,5 +32,5 @@
   * [Core Operational Logic & Expected Behaviors](basic-docs/advanced-concepts/core-operational-logic-and-expected-behaviors.md)
   * [Troubleshooting FAQ](basic-docs/advanced-concepts/troubleshooting-faq.md)
 * [Reports & Analytics](basic-docs/fleet-operations/reports-and-analytics.md)
-* [Reports](basic-docs/documentations/basic-docs/reports.md)
+* [Reports](basic-docs/reports.md)
 * [UI/UX Specifications & Design System](basic-docs/advanced-concepts/ui-ux-specifications-and-design-system.md)
