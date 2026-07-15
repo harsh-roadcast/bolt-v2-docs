@@ -179,7 +179,7 @@ Anyone opening Reports for the first time. No prior configuration knowledge assu
 #### What you'll accomplish
 
 - Open Reports and find the report you need
-- Set a date range and pick vehicles
+- Set a date range and pick vehicless
 - Generate a report and download it as a file
 
 #### Before you begin
