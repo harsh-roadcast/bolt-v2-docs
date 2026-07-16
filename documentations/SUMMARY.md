@@ -32,7 +32,7 @@
   * [Core Operational Logic & Expected Behaviors](basic-docs/advanced-concepts/core-operational-logic-and-expected-behaviors.md)
   * [Troubleshooting FAQ](basic-docs/advanced-concepts/troubleshooting-faq.md)
 * [Reports & Analytics](basic-docs/fleet-operations/reports-and-analytics.md)
-* [Reports](basic-docs/Reports/index.md)
+* [Reports](basic-docs/Reports/README.md)
   * [How Reports Works](basic-docs/Reports/how-reports-works.md)
   * [Reports Quick Start](basic-docs/Reports/reports-quick-start.md)
   * [Report Catalogue](basic-docs/Reports/report-catalogue.md)
