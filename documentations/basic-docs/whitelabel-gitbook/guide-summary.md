@@ -1,0 +1,5 @@
+## 31. Guide Summary
+
+White Label Branding turns the current manual white-label process into a structured Bolt module. The approved Admin interface confirms a Whitelabel Manager with list, create, view and edit flows across Brand Setup, Authentication, Themes and Advanced Controls. The operational workflow adds the operational layer: customer-side purchase, setup flow, app build tracking, approval/rejection, version history and support/developer handoff. This guide explicitly separates runtime mobile theme reflection from full mobile app-store white labelling, so supported mobile theme changes can sync without requiring a new build.
+
+The recommended product direction is to launch Web Branding first as a self-serve paid add-on, then progressively add mobile app build tracking, advanced login customisation, email branding and deeper mobile white-label support. This guide packages the approved interaction states, operational rules, and screenshots needed for product, engineering, QA, implementation, and support alignment.
