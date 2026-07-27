@@ -1,6 +1,6 @@
-# White Label Branding
+# White Label Module
 
-## 1. Overview
+## Overview
 
 White Label Branding is a paid Bolt v2 module that enables a customer, reseller or authorised admin to configure brand identity for the Bolt platform without depending on one-off Super Admin or developer-led customisation.
 
@@ -10,4 +10,4 @@ A key product requirement is that theme values configured in the web Branding Mo
 
 The long-term goal is a client-facing self-serve Branding Module. The approved Admin Whitelabel interface defines the current field structure and management workflows. The broader product workflow defines purchase, mobile delivery, approval, versioning, and operational handoffs.
 
----
+***
