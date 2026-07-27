@@ -39,7 +39,7 @@ The structure of Bolt V2 is built as a recursive tree, ensuring that permissions
    * _**Access**:_ Branch Manager / Operations.
    * _**Responsibility**:_ Day-to-day dispatch, yard management, and driver assignments.
 
-<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Inheritance Logic:**
 
