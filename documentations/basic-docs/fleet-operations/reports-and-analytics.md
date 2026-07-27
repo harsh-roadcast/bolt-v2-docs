@@ -12,8 +12,6 @@ Standard reports focus on traditional fleet metrics. All reports are "Organizati
 4. **Define Timeframe:** Use the date-time picker to select your range.
 5. **Run Report:** Click the "Generate" button. The data will appear in a high-performance grid.
 
-
-
 #### 2. Specialized Report Modules
 
 Bolt V2 categorizes data into specialized views based on your operational needs.
@@ -68,7 +66,7 @@ If standard reports do not meet your specific needs, the **Custom Report Engine*
 2. **Choose Columns:** Drag and drop fields like "Max Speed," "Idle Time," or "Fuel Consumed."
 3. **Apply Logic:** Filter by specific triggers (e.g., "Only show trips with > 5 stoppages").
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Exporting & Scheduling
 

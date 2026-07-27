@@ -25,7 +25,7 @@ The dashboard cards at the top display real-time counts:
 
 Below the metrics, the **Trip Timeline** visualizes the flow of traffic over the last 24 hours. Spikes in the graph indicate peak operational hours, helping you plan labor shifts effectively.
 
-<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Monitoring Dock Operations
 
@@ -76,15 +76,15 @@ Before a trip can begin, a driver and vehicle must be securely linked.
 
 {% columns %}
 {% column %}
-<figure><img src="../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 
 {% column %}
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 {% endcolumn %}
 {% endcolumns %}
 
