@@ -1,18 +1,3 @@
----
-description: Detailed product requirements, workflows, system rules, and acceptance criteria for the development-ready Bolt Home web module.
----
-
-# Bolt Home — Product and Functional Guide
-
-**Version:** 1.1 — Development-ready specification  
-**Prepared for:** Roadcast / Bolt  
-**Module:** Home  
-**Platform:** Bolt Web  
-**Status:** Ready for product, engineering, and QA alignment  
-**Last updated:** 24 July 2026
-
----
-
 ## 1. Overview
 
 Home is the default landing page for Bolt users after login. It gives users an immediate view of fleet status, device health, setup progress, license health, and the actions that need attention.

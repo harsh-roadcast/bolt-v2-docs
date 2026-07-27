@@ -1,18 +1,3 @@
----
-description: Detailed product requirements, workflows, system rules, and acceptance criteria for the Bolt Map web module.
----
-
-# Bolt Map — Product and Functional Guide
-
-**Version:** 1.1 — Detailed product and functional specification  
-**Prepared for:** Roadcast / Bolt  
-**Module:** Map  
-**Platforms:** Bolt Web  
-**Status:** Product, design and engineering review  
-**Last updated:** 24 July 2026
-
----
-
 ## 1. Overview
 
 Map is the core operational workspace of Bolt Fleet Management. It is the page where users monitor live fleet location, inspect vehicle/device-group state, view geofences and POIs, replay historical movement, execute selected operational commands, and navigate to deeper entity actions.

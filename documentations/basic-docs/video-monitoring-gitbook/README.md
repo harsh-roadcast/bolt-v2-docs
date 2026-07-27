@@ -1,18 +1,3 @@
----
-description: Detailed product requirements, workflows, system rules, and acceptance criteria for Bolt Video Monitoring on the web.
----
-
-# Bolt Video Monitoring — Product and Functional Guide
-
-**Version:** 1.1 — Detailed product and functional specification  
-**Prepared for:** Roadcast / Bolt  
-**Module:** Video Monitoring  
-**Platforms:** Bolt Web  
-**Status:** Product, design and engineering review  
-**Last updated:** 24 July 2026
-
----
-
 ## 1. Overview
 
 Video Monitoring is Bolt's dashcam and video-telematics workspace for monitoring live camera streams, detecting safety incidents, reviewing evidence and acting on fleet risk in near real time. It brings live monitoring, stream-level actions, historical video, map context and incident investigation into one operational module.
