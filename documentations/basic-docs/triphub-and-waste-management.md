@@ -143,8 +143,6 @@ Sometimes you need to collect Bulky Waste or handle a request that isn't on the 
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 ### 7. The Driver App
 
 The mobile app is the driver's main tool for attendance and navigation.
@@ -186,8 +184,6 @@ The mobile app is the driver's main tool for attendance and navigation.
 {% endcolumn %}
 {% endcolumns %}
 
-
-
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ### 8. Hardware & Reports
@@ -203,20 +199,14 @@ TripHub connects with smart hardware to keep your fleet safe and efficient.
 {% columns %}
 {% column %}
 <figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-
 {% endcolumn %}
 
 {% column %}
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
-
-
 {% endcolumn %}
 
 {% column %}
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
-
-
 {% endcolumn %}
 {% endcolumns %}
 
@@ -228,5 +218,4 @@ You can generate custom reports to audit operations, including:
 * Driver Attendance.
 * Trip Summaries.
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>

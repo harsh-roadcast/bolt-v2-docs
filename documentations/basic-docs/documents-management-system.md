@@ -70,7 +70,7 @@ You no longer need to download files to email them.
 * **Edit:** Update metadata (like a wrong Issue Date) without needing to re-upload the file.
 * **Download:** Retrieve the original file for printing.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Document Lifecycle Logic
 

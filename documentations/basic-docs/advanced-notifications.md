@@ -36,7 +36,7 @@ Instead of alerting on _every_ spike, adding "Advanced Conditions" allows you to
 * **Value-Based:** "Power Cut" **AND** "Voltage < 11.5V." (Ignores minor fluctuations).
 * **Time-Based:** "Geofence Entry" **AND** "Time is between 10:00 PM - 5:00 AM." (Night shift security).
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 

@@ -13,7 +13,7 @@ Each vehicle marker on the map is color-coded based on its real-time telemetry d
 | **Parked**   | **Red**    | Ignition **OFF**                | The vehicle is completely shut down. The engine is off, and it is parked at a location.                                                   |
 | **Inactive** | **Grey**   | No Data > **10 Mins**           | The device has stopped communicating with the server. This could be due to a power cut, dead battery, or cellular network loss (No GPRS). |
 
-<figure><img src="../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Vehicle Type Icons
 

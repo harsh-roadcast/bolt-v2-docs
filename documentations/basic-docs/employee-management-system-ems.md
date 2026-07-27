@@ -82,7 +82,7 @@ Visible _only_ to users with a "Reporting Manager" designation.
 * **Approval/Rejection:** Managers can approve leaves or reject them (which requires a mandatory rejection reason).
 * **Automated Requests:** System-generated flags (like weekend deployment or unsanctioned work) will also appear here for manager approval.
 
-<figure><img src="../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 **5.3 Leave Types (For Admins)**
 
