@@ -129,7 +129,6 @@
   * [Suggested Release Phasing](basic-docs/video-monitoring-gitbook/suggested-release-phasing.md)
   * [PRD Summary](basic-docs/video-monitoring-gitbook/prd-summary.md)
 * [White Label Module](basic-docs/whitelabel-gitbook/README.md)
-  * [Overview](basic-docs/whitelabel-gitbook/overview.md)
   * [How to Use This Guide](basic-docs/whitelabel-gitbook/how-to-use-this-guide.md)
   * [Problem Statement](basic-docs/whitelabel-gitbook/problem-statement.md)
   * [Product Goals](basic-docs/whitelabel-gitbook/product-goals.md)
