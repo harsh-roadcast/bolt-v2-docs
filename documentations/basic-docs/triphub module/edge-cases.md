@@ -1,0 +1,64 @@
+## Edge Cases
+
+- Scheduler-linked route has no valid shift or the linked shift has been disabled.
+- Scheduler fails to generate or sync a trip and TripHub must show the latest Scheduler status/error where available.
+- Route is edited, disabled or versioned after a Scheduler reference is attached.
+- Manual-route selections persist across filter/search/page changes.
+- Auto-routing returns partial success with unassigned haltpoints.
+- Auto-routing returns no feasible route because of capacity, range, time or zone constraints.
+- Auto-routing backend timeout.
+- Duplicate trip conflicts with existing driver/vehicle assignment.
+- Target/haltpoint generic device action appears but entity is not device-linked.
+- Mobile OTP is wrong or retry limit is exceeded.
+- Mobile POD photo upload fails.
+- Mobile user cancels trip and must select reason.
+- Mobile breakdown cannot-move flow requires replacement vehicle validation.
+- Replacement number plate scan does not match assigned replacement vehicle.
+- Driver has no active shift or schedule.
+- Mobile app is offline during active trip execution.
+- Mobile sync fails after target completion.
+- Mobile assignment becomes stale after dispatcher changes the trip on web.
+- Camera, location, microphone or call permission is denied.
+- Target or haltpoint is permanently deleted after being used in operational data; dependency impact and audit trail must be shown before deletion.
+- Haltpoint is edited while route using it is active.
+- Route is edited while a linked trip is in progress; started trip must retain its execution snapshot while future generated trips update from the latest route update.
+- Service area does not contain selected haltpoints.
+- User uploads invalid or unsupported KML.
+- Target has missing coordinates.
+- Driver is absent but trip is scheduled to start.
+- Vehicle/device has no recent location update.
+- Trip is marked breakdown and then reassigned.
+- Driver resumes trip after reassignment.
+- Adhoc request is completed but original route is re-run.
+- Parent is linked to multiple students across different active trips.
+- HRMS attendance API fails.
+- Checklist required but mobile device is offline.
+- Duplicate target imported through CSV/API.
+- Route optimisation returns no feasible route.
+- Trip has no path replay data.
+- User lacks permission for an action available in row menu.
+- Mobile user tries to start a trip before mandatory identity verification is complete.
+- Driver starts a trip while the pre-trip checklist is incomplete.
+- Driver completes a trip while targets remain incomplete.
+- Mobile proof upload succeeds locally but fails to sync to server.
+- Driver submits adhoc request with coordinates outside assigned service area.
+- Driver reports breakdown and then loses connectivity before acknowledgement reaches web.
+- Mobile trip assignment changes while the driver is already viewing trip detail.
+- Trip reaches Load Full before all targets are completed.
+- Target is skipped and must be assigned to another active/upcoming trip.
+- Breakdown occurs with uncompleted targets remaining.
+- Admin attempts to reorder a target that is already Picked, Dropped, Exchanged, Missed or Completed.
+- Frequency-generated duplicate service request is completed once but not all required occurrences are completed.
+- Exchange pickup is completed but replacement/drop-side handling is missing.
+- Route deviation alert fires repeatedly while vehicle remains off-route; deduplication and escalation rules must be defined by alert engine.
+
+### Admin configuration edge cases
+
+- Admin disables a target type that is currently used by active routes or trips. System should block or require a dependency-resolution flow.
+- Admin removes a mandatory field after targets already contain values. Historical values must remain available.
+- Admin changes field type from one incompatible data type to another. System should block the change unless a migration rule exists.
+- Admin creates two attribute schemas for the same organisation and target type. System should prevent duplicate active schemas unless versioning is explicitly supported.
+- Admin disables Haltpoint Selection for a route type that already has haltpoint-based routes. Existing routes should continue to work; new routes should follow the updated rule.
+- Admin disables Vehicle Assignment Allowed for a route type with scheduled future trips. System must define whether future scheduled trips are migrated, blocked or left unchanged.
+
+---
